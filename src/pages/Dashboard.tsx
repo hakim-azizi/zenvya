@@ -1,7 +1,7 @@
 import "../style/Dashboard.css"
 function Dashboard() {
   return (
-    <div className="content">
+    <div className="content content-dashboard">
       <header>
         <h1>Dashboard</h1>
         <h2>Bonjour! 👋</h2>

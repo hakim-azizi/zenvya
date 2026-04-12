@@ -22,7 +22,7 @@ export const router = createBrowserRouter(
       {/* Define the default (index) route to render the Home page */}
       <Route path="ai-consulting" element={<AiConsulting />} />
       {/* Define the default (index) route to render the Home page */}
-      <Route path="Dashboard" element={<Dashboard />} />
+      <Route path="dashboard" element={<Dashboard />} />
       {/* Define the default (index) route to render the Home page */}
       <Route path="finance" element={<Finance />} />
       {/* Define the default (index) route to render the Home page */}

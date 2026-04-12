@@ -1,4 +1,5 @@
- import '../style/NavBar.css'
+ import { Link } from 'react-router-dom';
+import '../style/NavBar.css'
 function NavBar() {
   
   return (
@@ -8,7 +9,7 @@ function NavBar() {
                 <li>ZENVYA</li>
                 <li>Features</li>
                 <li>Career Coach</li>
-                <li className='begin'>GET STARTED</li>
+                <li className='begin'><Link to='dashboard'>GET STARTED</Link></li>
             </ul>
         </nav>
     </header>

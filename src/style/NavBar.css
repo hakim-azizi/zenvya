@@ -25,11 +25,17 @@ align-items: center;
     list-style: none;
     padding: .5em;
 }
-.begin{
-    background: #4C7676;
-    color: #FFF;
+.begin {
     font-weight: bold;
     padding: .5em;
     border-radius: .5em
+}
+.begin a {
+    background: #4C7676;
+    color: #FFF;
+}
+.begin a:hover {
+    background: #FFF;
+    color: #4C7676;
 }
 

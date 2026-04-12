@@ -1,12 +1,11 @@
+import { useLocation } from "react-router-dom";
+import Menu from "./Menu";
 import NavBar from "./NavBar";
 
+
 function Header() {
-  return (
-    <>
-      cela affiche l'entête
-      <br />
-      <NavBar />
-    </>
-  );
+  const location = useLocation().pathname;
+  
+  return location === '/' ? <NavBar /> : <Menu />
 }
 export default Header;

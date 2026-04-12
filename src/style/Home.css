@@ -1,0 +1,95 @@
+.border {
+    display: inline;
+    padding: .5em;
+    font-size: .5em;
+    font-weight: bold;
+    background: #c4c2bf;
+    border-radius: 1em;
+}
+.slogan {
+    margin-top:1em;
+        font-size: 5em;
+}
+p {
+    margin: 1em 0;
+    width: 100%;
+}
+.demo {
+    background: #c4c2bf;
+    font-weight: bold;
+    padding: .5em;
+    border-radius: .5em;
+    margin:1em 0 0 .5em;
+    display:inline-block;
+}
+.limit {
+    padding:1em;
+    border-radius: 1em 1em 0 0;
+    background: #4C7676;
+
+    width: 100%;
+}
+.limit ul {
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+   list-style: none;
+}
+.limit ul li {
+    padding: .5em;
+    font-weight: bold;
+}
+.preview{
+    /* padding: .5em;
+    font-size: .5em; */
+    border-radius: 1em;
+    background: #71acac;
+}
+.limit div {
+    display: flex;
+    justify-content: space-between;
+}
+.limit div p {
+    width: 45%;
+    color: #FFF;
+    border-radius: 1em;
+    background: #71acac;
+    padding: 1em;
+}
+.limit div p span{
+    font-size: 2em;
+    font-weight: bold;
+}
+.activity {
+    background: #FFF;
+    width: 100%;
+    padding: 1em;
+}
+.activity ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: .5em;
+}
+.activity ul li:first-child {
+    grid-column: 1 / -1;
+    font-weight: bold;
+}
+.activity ul li:not(:first-child) {
+    list-style: none;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: .5em;
+}
+.color-1 {
+    background: #4C7676;
+}
+.color-2 {
+    background: #EBE9E6;
+}
+.color-3 {
+   background: #c4c2bf;
+}
+.color-4 {
+    background: #71acac;
+}

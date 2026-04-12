@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    width : 100vw;
+    background: #FFF;
+    height: 4.75em;
+}
+.navbar nav {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    height: 100%;
+}
+.navbar nav ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-content: center;
+align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: .5em;
+}
+.navbar nav ul li {
+    list-style: none;
+    padding: .5em;
+}
+.begin{
+    background: #4C7676;
+    color: #FFF;
+    font-weight: bold;
+    padding: .5em;
+    border-radius: .5em
+}
+

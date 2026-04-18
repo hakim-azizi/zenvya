@@ -1,0 +1,41 @@
+footer {
+    background: #2B2B2B;
+    color: #FFF;
+    padding: 1em;
+}
+footer > section {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-between;
+    align-content: center;
+    /* align-items: center; */
+        width: 100%;
+}
+footer > section > article {
+    min-width: 10em;
+}
+footer > section > article > ul > li > a,
+footer > section > article > p{
+    color: #BCBCBC;
+}
+footer > section > article > ul > li > a:hover {
+    color: #FFF;
+    background: #2B2B2B;
+}
+
+footer > section > article > ul > li,
+footer > section > article > h2 {
+    margin-bottom: 1em;
+}
+footer > section > article > ul > li {
+    list-style: none;
+}
+.copyright > p {
+    text-align: center;
+    width: 60vw;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid #BCBCBC;
+    padding-top: 1em;
+}

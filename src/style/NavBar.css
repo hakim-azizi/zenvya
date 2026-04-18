@@ -1,17 +1,21 @@
 .navbar {
+    position:fixed;
+    top:0;
+    left:0;
     display: flex;
     align-items: center;
     width : 100vw;
     background: #FFF;
     height: 4.75em;
+    border: 1px solid #E9E9E9;
 }
-.navbar nav {
+.navbar > nav {
     display: flex;
     flex: 1;
     align-items: center;
     height: 100%;
 }
-.navbar nav ul {
+.navbar > nav > ul {
     display: flex;
     flex: 1;
     justify-content: space-between;
@@ -21,20 +25,20 @@ align-items: center;
     width: 100%;
     padding: .5em;
 }
-.navbar nav ul li {
+.navbar > nav > ul > li {
     list-style: none;
     padding: .5em;
 }
 .begin {
     font-weight: bold;
     padding: .5em;
-    border-radius: .5em
+    border-radius: .5em;
 }
-.begin a {
+.begin > a {
     background: #4C7676;
     color: #FFF;
 }
-.begin a:hover {
+.begin > a:hover {
     background: #FFF;
     color: #4C7676;
 }

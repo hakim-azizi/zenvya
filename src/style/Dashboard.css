@@ -1,6 +1,7 @@
 .content-dashboard {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
 }
 .introduction {
     background-color: #4C7676;
@@ -18,10 +19,10 @@
 .introduction article p {
     display: inline-block;
 }
-.introduction article .score {
+.score {
     font-size: 2em;
 }
-.introduction article .score span {
+.score span {
     font-size: 3em;
 }
 .result {

@@ -1,11 +1,15 @@
 import "../style/Dashboard.css"
 function Dashboard() {
+ const date = new Date();
+
+const formatted = `${date.toLocaleDateString('fr-FR', { weekday: 'long' })} ${date.toLocaleDateString('fr-FR', { day: '2-digit', month: 'long', year: 'numeric' })}`;
+
   return (
     <div className="content content-dashboard">
       <header>
         <h1>Dashboard</h1>
         <h2>Bonjour! 👋</h2>
-        <p>Voici votre aperçu personnel pour aujourd'hui, Lundi 6 Avril 2026</p>
+        <p>Voici votre aperçu personnel pour aujourd'hui, {formatted}.</p>
       </header>
       <section className="introduction">
         <article>
@@ -18,10 +22,46 @@ function Dashboard() {
         </article>
       </section>
       <section className="information">
-        <article>santé</article>
-        <article>finance</article>
-        <article>Temps</article>
-        <article>Habitude</article>
+        <article className='four-parts'>santé</article>
+        <article className='four-parts'>finance</article>
+        <article className='four-parts'>Temps</article>
+        <article className='four-parts'>Habitude</article>
+      </section>
+      <section className="information">
+        <h2>Recommandations IA</h2>
+        <article className='three-parts'>
+          <p><span>😴</span><span className='border'>Santé</span></p>
+          <h3>Améliorer la qualité du sommeil</h3>
+          <p>Vos données montrent que votre sommeil est de meilleure qualité les jours où vous faites de l'exercice. Essayez d'augmenter votre activité physique en semaine.</p>
+          <p className='border'>Impact estimé:
+            <br />
+            +15% qualité de sommeil estimée
+          </p>
+        </article>
+        <article className='three-parts'>
+          <p><span>💰</span><span className='border'>Finance</span></p>
+          <h3>Optimiser vos dépenses de loisirs</h3>
+          <p>Vous êtes proche de votre budget loisirs. En réduisant de 15€/semaine, vous pourriez économiser 780€/an supplémentaires.</p>
+          <p className='border'>Impact estimé:
+            <br />
+            +780€/an d'économies
+          </p>
+        </article>
+        <article className='three-parts'>
+          <p><span>📱</span><span className='border'>Productivité</span></p>
+          <h3>Réduire le temps sur les réseaux sociaux</h3>
+          <p>Vous passez en moyenne 1h43/jour sur les réseaux sociaux, principalement entre 20h-22h. Ce temps pourrait être réalloué à vos objectifs.</p>
+          <p className='border'>Impact estimé:
+            <br />
+            +7h/semaine disponibles
+          </p>
+        </article>
+      </section>
+      <section className='information'>
+        <h2>Points d'attention</h2>
+        <article className='one-part'>
+          <p><span className='border'>⚠️ Sommeil en semaine</span> <span className='border'>⚠️ Temps d'écran</span></p>
+        </article>
       </section>
     </div>
     

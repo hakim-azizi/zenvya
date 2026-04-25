@@ -1,7 +1,7 @@
 .content-dashboard {
-    display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
 }
 .introduction {
     background-color: #4C7676;
@@ -49,11 +49,26 @@
     gap: 1em;
     justify-content: center;
 }
-.information article {
+.information > h2 {
+    width: 100%;
+}
+.information > article {
     background-color: #FFF;
-    width: 20%; 
     min-width: 15em;
-    height: 10em;
     padding: 1em;
     border-radius: 1em;
+}
+.information > .four-parts {
+    width: 20%; 
+    height: 10em;
+}
+.information > .three-parts {
+    width: 30%; 
+}
+.information > .three-parts > p {
+    display: flex;
+    justify-content: space-between;
+}
+.information > .one-part {
+    width: 100%; 
 }

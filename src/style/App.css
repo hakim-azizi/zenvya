@@ -5,13 +5,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Fraunces';
+}
+h1,
+h2,
+h3,
+.slogan {
+    font-style: italic;
 }
 #contener {
     display: flex;
     min-height: 100vh;
-    flex-direction:column;
-}
-#contener > * {
     width: 100%;
 }
 section {
@@ -21,6 +25,7 @@ section {
 .menu {
     width:14em;
     padding:0 1em;
+    background: #FFF;
 }
 .menu ul {
     display: flex;
@@ -40,11 +45,11 @@ section {
     margin: 0;
     flex: 1;
     background-color: #EBE9E6;
-    margin-top: 4.75em;
+    margin: 4.75em 0 1em 0;
+    gap: 1em;
 }
 header {
     text-align: center;
-    margin-bottom: 1em;
 }
 h1 {
     display: inline;

@@ -5,6 +5,7 @@
     justify-content: center;
     gap: 1em;
     padding: 1em 0 3em 0;
+    margin-top: 4.75em;
 }
 .border {
     display: inline;
@@ -20,7 +21,6 @@
 }
 p {
     margin: 1em 0;
-    width: 100%;
 }
 .espacement {
     display: flex;

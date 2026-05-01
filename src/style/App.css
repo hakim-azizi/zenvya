@@ -22,30 +22,15 @@ section {
     width: 45%;
     min-width: 240px;
 }
-.menu {
-    width:14em;
-    padding:0 1em;
-    background: #FFF;
-}
-.menu ul {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-}
-.menu ul li {
-    width: 100%;
-    list-style: none;
-    border-radius: 1;
-}
 .content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     margin: 0;
     flex: 1;
     background-color: #EBE9E6;
-    margin: 4.75em 0 1em 0;
+    margin: 5.75em 0 1em 0;
     gap: 1em;
 }
 header {
@@ -71,3 +56,17 @@ header h2, header p {
 a {
     text-decoration: none;
 }
+@media (max-width: 800px) {
+.content {
+    margin: 5.75em 0 1em 0;
+    }
+}
+@media (min-width: 801px) {
+.content {
+    margin: 1em 0 1em 0;
+    }
+}
+
+
+
+

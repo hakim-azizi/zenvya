@@ -2,6 +2,7 @@ footer {
     background: #2B2B2B;
     color: #FFF;
     padding: 1em;
+    width: calc(100vw - 1em);
 }
 footer > section {
     display: flex;

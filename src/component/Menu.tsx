@@ -9,6 +9,7 @@ function Menu() {
     const [value, setValue] = useState(0);
     const [height, setHeight] = useState(0);
     const containerRef = useRef<HTMLUListElement | null>(null);
+    const buttonRef = useRef<HTMLButtonElement | null>(null);
     const [windowWidth,setWindowWidth] = useState<boolean>(window.matchMedia('(min-width: 801px)').matches);
     const measureHeight = () => {
         if (containerRef.current) {
@@ -23,17 +24,18 @@ function Menu() {
       if (!menu) return;
 
       setWindowWidth(window.matchMedia("(min-width: 801px)").matches);
-      if (window.matchMedia("(min-width: 801px)").matches) {
+      if (window.matchMedia("(min-width: 801px)").matches) { console.log('je suis dans le if');
         menu.style.visibility = "visible";
-        menu.style.height = `${height}px`;
-      } else {
-      if (value === 1) {
+        menu.style.marginTop = '0';
+      } else { console.log('je suis dans le else');
+      if (value === 1) { 
         menu.style.visibility = "visible";
         menu.style.marginTop='80px';
       } else {
         menu.style.marginTop=`-${height+80}px`;
         menu.style.visibility = "hidden";
     }
+
     }
  }); 
  }, [windowWidth, height, value]);
@@ -44,21 +46,20 @@ function Menu() {
 
     const openMenu = () => {
   
-    if(menu){
+    if(menu && buttonRef.current){
   
     if (value === 0) {
       setValue(1);
       Setimage("../images/images/menu-burger1.png");
       menu.style.marginTop='80px';
       menu.style.visibility = "visible";
-      // transform: scale(1);
-      menu.style.height = `${height}px`;
+      buttonRef.current.style.marginRight='1em';
     } else {
       setValue(0);
       Setimage("../images/images/menu-burger.png");
       menu.style.marginTop=`-${height+80}px`;
-      // menu.style.height = "0px";
-      setTimeout(() => {
+      buttonRef.current.style.marginRight='0';
+          setTimeout(() => {
         menu.style.visibility = "hidden";
       }, 250); // Durée de l'animation de fermeture
     }}
@@ -66,17 +67,24 @@ function Menu() {
 
   return (
     <header className='vertical-menu'>
+    
       <div>
         <p>
-          Z
+          <Link to='./'>Z</Link>
         </p>
         <p>
-          ZENVYA<br />
-          Assistant intelligent
+          <Link to='./'>ZENVYA<br />
+          Assistant intelligent</Link>
         </p>
+        
       </div>
+    
     <nav className="menu">
-      <button type="button" onClick={openMenu}>
+      <button
+      type="button"
+      onClick={openMenu}
+    ref={buttonRef}  
+    >
         <img src={image} alt="Ouverture du menu" />
       </button>
                 <ul

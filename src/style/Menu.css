@@ -1,19 +1,33 @@
 .vertical-menu {
     background: #FFF;
     display: flex;
-}
-.vertical-menu > div {
+    }
+.vertical-menu  > div {
+    position:relative;
+    top: 0;
+    left: 0;
+    z-index:2;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     flex-wrap: wrap;
     gap: 1em;
+    color: #000;
+    opacity:1;
 }
-.vertical-menu > div > p:first-child {
+.vertical-menu > div > p:first-child > a {
     color : #4C7676;
     font-weight: bold;
     font-style: italic;
-    padding-left: 1em;
     font-size: 2em;
     margin-top: .5em;
+}
+.vertical-menu > div > p {
+    margin: 0;
+}
+.vertical-menu > div > p > a {
+    color : #000;
 }
 .menu {
     display:flex;
@@ -33,7 +47,9 @@
     display: flex;
     flex-direction: column;
     width:14em;
+        
 }
+
 .menu ul li {
     width: 100%;
     list-style: none;
@@ -44,12 +60,18 @@
         .vertical-menu {
         flex-direction: row;
         justify-content: space-between;
-        height: 80px;
+        height: 81px;
         width: 100%;  
         position: fixed;
         right: 0;
         top: 0;
+        
     }
+    .vertical-menu,
+    .menu {
+        border-bottom: 1px solid #000;
+    }
+
     .menu button {
         display: inline;
     }
@@ -77,7 +99,11 @@
     .vertical-menu {
         flex-direction:column;    
     }
-
+    .vertical-menu > div {
+        height: 81px;
+        border-bottom: 1px solid #000;
+    }
+    .open-menu {z-index: 1;}
     nav > ul {
         visibility: show;
     }

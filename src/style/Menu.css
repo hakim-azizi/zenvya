@@ -46,10 +46,8 @@
 .menu ul {
     display: flex;
     flex-direction: column;
-    width:14em;
-        
+    width:14em; 
 }
-
 .menu ul li {
     width: 100%;
     list-style: none;
@@ -65,13 +63,11 @@
         position: fixed;
         right: 0;
         top: 0;
-        
     }
     .vertical-menu,
     .menu {
         border-bottom: 1px solid #000;
     }
-
     .menu button {
         display: inline;
     }
@@ -97,13 +93,22 @@
 }
 @media (min-width: 801px) {
     .vertical-menu {
-        flex-direction:column;    
+        flex-direction:column;
     }
     .vertical-menu > div {
+        position: fixed;
+        top: 0px;
+        left: 0px;
         height: 81px;
+        width: 14em;
         border-bottom: 1px solid #000;
     }
-    .open-menu {z-index: 1;}
+    .open-menu {
+        position: fixed;
+        top: 81px;
+        left: 0px;
+        z-index: 1;
+    }
     nav > ul {
         visibility: show;
     }

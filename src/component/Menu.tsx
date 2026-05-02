@@ -24,10 +24,10 @@ function Menu() {
       if (!menu) return;
 
       setWindowWidth(window.matchMedia("(min-width: 801px)").matches);
-      if (window.matchMedia("(min-width: 801px)").matches) { console.log('je suis dans le if');
+      if (window.matchMedia("(min-width: 801px)").matches) { 
         menu.style.visibility = "visible";
         menu.style.marginTop = '0';
-      } else { console.log('je suis dans le else');
+      } else { 
       if (value === 1) { 
         menu.style.visibility = "visible";
         menu.style.marginTop='80px';

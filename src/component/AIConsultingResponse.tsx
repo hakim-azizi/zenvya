@@ -13,7 +13,8 @@ export interface contentType {
 function AIConsultingResponse({ responseAI }: { responseAI: string }) {
 const [content,setContent]=useState<Record<string, contentType | null>>({});
 useEffect(()=>{
-  fetch(`${import.meta.env.VITE_API_URL}/array/consulting.json`)
+  // fetch(`${import.meta.env.VITE_API_URL}/array/consulting.json`)
+  fetch(`https://zenvya.vercel.app/array/consulting.json`)
         .then((response) => response.json())
         .then((data) => setContent(data));
     }, []);

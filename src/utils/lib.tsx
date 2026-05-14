@@ -12,3 +12,10 @@
          
    return parseFloat(c.toFixed(2));
   }
+
+  export const gauge = (a:number,b:number,classCss?:string) => {
+    const css = classCss ?? 'gauge-default';
+    return (<aside className="linear-gauge">
+            <span className={`${css}`} style={{width:`${percent(a,b,true)}%`}}>&nbsp;</span>
+        </aside>)
+  }

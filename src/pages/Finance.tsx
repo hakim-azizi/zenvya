@@ -1,6 +1,6 @@
 // import {useState} from 'react';
 import Chart from '../component/Chart';
-import {percent} from '../utils/lib';
+import {percent,gauge} from '../utils/lib';
 import type { AgChartOptions } from "ag-charts-community";
 
 import '../style/Finance.css'
@@ -82,9 +82,7 @@ series: [
       <article className='four-parts'>
         <p>Dépensé</p>
         <p>2847€</p>
-        <aside className="linear-gauge">
-            <span className='gauge-default' style={{width:`${percent(2847,3500,true)}%`}}>&nbsp;</span>
-        </aside>
+        {gauge(2847,3500)}
         <p>{`${percent(2847,3500)}%`} du budget</p>
       </article>
       <article className='four-parts'>
@@ -95,9 +93,7 @@ series: [
       <article className='four-parts'>
         <p>Économies</p>
         <p>12450€</p>
-        <aside className="linear-gauge">
-            <span className='gauge-default' style={{width:`${percent(12450,20000,true)}%`}}>&nbsp;</span>
-        </aside>
+          {gauge(12450,20000)}
         <p>Objectif: 20000€</p>
       </article>
     </section>
@@ -106,54 +102,42 @@ series: [
       <article>
         <p><span>Logement</span><span><span className='bold'>1200€</span> / 1300€</span></p>
         <div>
-        <aside className="linear-gauge">
-          <span className='housing' style={{width:`${percent(1200,1300,true)}%`}}>&nbsp;</span>
-        </aside>
+          {gauge(1200,1300,'housing')}
         <p className='bold'>
           {`${percent(1200,1300)}%`}
         </p>
         </div>
         <p><span>Santé</span><span><span className='bold'>155€</span> / 200€</span></p>
         <div>
-          <aside className="linear-gauge">
-            <span className='health' style={{width:`${percent(155,200,true)}%`}}>&nbsp;</span>
-          </aside>
+          {gauge(155,200,'health')}
           <p className='bold'>
             {`${percent(155,200)}%`}
           </p>
         </div>
         <p><span>Loisir</span><span><span className='bold'>285€</span> / 300€</span></p>
         <div>
-          <aside className="linear-gauge">
-            <span className='Hobbies' style={{width:`${percent(285,300,true)}%`}}>&nbsp;</span>
-          </aside>
+            {gauge(285,300,'Hobbies')}
           <p className='bold'>
             {`${percent(285,300)}%`}
           </p>
         </div>
         <p><span>Transport</span><span><span className='bold'>320€</span> / 400€</span></p>
         <div>
-          <aside className="linear-gauge">
-            <span className='transportation' style={{width:`${percent(320,400,true)}%`}}>&nbsp;</span>
-          </aside>
+            {gauge(320,400,'transportation')}
           <p className='bold'>
             {`${percent(320,400)}%`}
           </p>
         </div>
         <p><span>Alimentation</span><span><span className='bold'>487€</span> / 500€</span></p>
         <div>
-          <aside className="linear-gauge">
-            <span className='food' style={{width:`${percent(487,500,true)}%`}}>&nbsp;</span>
-          </aside>
+            {gauge(487,500,'food')}
           <p className='bold'>
             {`${percent(487,500,true)}%`}
           </p>
         </div>
         <p><span>Autres</span><span><span className='bold'>400€</span> / 800€</span></p>
         <div>
-          <aside className="linear-gauge">
-            <span className='others' style={{width:`${percent(400,800,true)}%`}}>&nbsp;</span>
-          </aside>
+            {gauge(400,800,'others')}
           <p className='bold'>
             {`${percent(400,800,true)}%`}
           </p>

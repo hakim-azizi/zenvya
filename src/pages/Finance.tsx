@@ -7,6 +7,7 @@ import '../style/Finance.css'
 
 function Finance() {
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [optionsPie, setOptionsPie] = useState<AgChartOptions>({
     data: [
     { asset: "Logement 42%", amount: 42 },
@@ -28,6 +29,7 @@ function Finance() {
     ],
   })
  
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [optionsBar, setOptionsBar] = useState<AgChartOptions>({
     // Data: Data to be displayed in the chart
     data: [

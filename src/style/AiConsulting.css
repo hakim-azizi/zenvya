@@ -31,15 +31,17 @@ margin: 0;
     width: 100%;
     margin: 0;
 }
-.filter > button {
+.button-background {
+    background: #F0F0F0;
     border: none;
     padding: 1em;
     border-radius: 1em;
     font-size: 1em;
 }
-.filter > button:focus {
+.button-background:focus {
     background: #6c9494;
-    color: #FFF;
+    color: #F0F0F0;
+    font-weight: bold;
 }
 .functioning {
     justify-content: center;

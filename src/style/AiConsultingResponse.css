@@ -1,0 +1,19 @@
+.response {
+    background: #FFF;
+    display:flex;
+    flex-direction:column;
+    gap:1em;
+}
+.response > article {
+    padding:1em;
+    border-radius:1em;
+}
+.analysis{
+    background: #FFF;
+}
+.recommended-action {
+    background: #EFF6FF;
+}
+.estimated-impact {
+    background: #F0FDF4;
+}

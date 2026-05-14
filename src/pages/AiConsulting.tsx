@@ -1,29 +1,42 @@
-import {Fragment, useState} from 'react';
+import {Fragment, useState, useRef} from 'react';
 
-import AiHealth from '../component/AiHealth';
-import AiFinance from '../component/AIFinance';
-import AIProductivity from '../component/AIProductivity';
-import AiHabits from '../component/AiHabits';
-import AiWellBeing from '../component/AiWellBeing';
+import AIConsultingResponse from '../component/AIConsultingResponse';
 
 import '../style/AiConsulting.css';
 
 function AiConsulting() {
-  type Choice = "All" | "Health" | "Finance" | "Productivity" | "Habits" | "Well-being";
-  const [selectChoice,setSelectChoice]=useState<Choice>('All');
+  type Choice = "all" | "health" | "finance" | "productivity" | "habits" | "wellBeing";
+  const [selectChoice,setSelectChoice]=useState<Choice>('all');
 
-  const choice = (value:Choice)=>{
-    setSelectChoice(value);
-  };
+  const allRef = useRef<HTMLButtonElement | null>(null);
+  const healthRef = useRef<HTMLButtonElement | null>(null);
+  const financeRef = useRef<HTMLButtonElement | null>(null);
+  const productivityRef = useRef<HTMLButtonElement | null>(null);
+  const habitsRef = useRef<HTMLButtonElement | null>(null);
+  const wellBeingRef = useRef<HTMLButtonElement | null>(null);
 
   const choiceArray = {
-  'Health': <AiHealth />,
-  'Finance': <AiFinance />,
-  'Productivity': <AIProductivity />,
-  'Habits': <AiHabits />,
-  'Well-being': <AiWellBeing />
-};
-//  console.log('tableau',choiceArray[selectChoice])
+    'health': <AIConsultingResponse responseAI='health' />,
+    'finance': <AIConsultingResponse responseAI='finance' />,
+    'productivity': <AIConsultingResponse responseAI='productivity' />,
+    'habits': <AIConsultingResponse responseAI='habits' />,
+    'wellBeing': <AIConsultingResponse responseAI='wellBeing' />
+  };
+  
+  const choice = (value:Choice)=>{
+    setSelectChoice(value);
+    /* const keys = Object.keys(choiceArray);
+    for(let i=0; i < keys.length; i++) {
+      if(keys[i]===value){
+        console.log("c'est la bonne => ",keys[i]);
+        
+      }else{
+        console.log("ce n'est pas la bonne => ",keys[i]);
+
+      }
+    } */
+  };
+
   return (
     <div className="content content-dashboard content-ai">
       <header>
@@ -48,14 +61,14 @@ function AiConsulting() {
       </section>
       <section className='filter'>
         <p>Filtrer par cat&eacute;gorie</p>
-        <button onClick={()=>{choice('All')}}>Toutes</button>
-        <button onClick={()=>{choice('Health')}}>Sant&eacute;</button>
-        <button onClick={()=>{choice('Finance')}}>Finance</button>
-        <button onClick={()=>{choice('Productivity')}}>Productivit&eacute;</button>
-        <button onClick={()=>{choice('Habits')}}>Habitudes</button>
-        <button onClick={()=>{choice('Well-being')}}>Bien-&ecirc;tre</button>
+        <button className='button-background button-all' onClick={()=>{choice('all');}} ref={allRef}>Toutes</button>
+        <button className='button-background button-health' onClick={()=>{choice('health');}}  ref={healthRef}>Sant&eacute;</button>
+        <button className='button-background button-finance' onClick={()=>{choice('finance');}}  ref={financeRef}>Finance</button>
+        <button className='button-background button-productivity' onClick={()=>{choice('productivity');}} ref={productivityRef}>Productivit&eacute;</button>
+        <button className='button-background button-habits'  onClick={()=>{choice('habits');}} ref={habitsRef}>Habitudes</button>
+        <button className='button-background button-well-being' onClick={()=>{choice('wellBeing');}} ref={wellBeingRef}>Bien-&ecirc;tre</button>
       </section>
-      {selectChoice === "All" ?
+      {selectChoice === "all" ?
       Object.entries(choiceArray).map(([key, choiceMap]) => (
       <Fragment key={key}>
         {choiceMap}

@@ -1,0 +1,42 @@
+{
+    "health":{
+        "title":"😴 Sant&eacute;",
+        "priority":"high",
+        "subTitle":"Am&eacute;liorer la qualit&eacute; du sommeil",
+        "analysis":"Vos donn&eacute;es montrent que votre sommeil est de meilleure qualit&eacute; les jours &uacute;ù vous faites de l&apos;exercice. Essayez d&apos;augmenter votre activit&eacute; physique en semaine.",
+        "recommendedAction":"Planifier 30 min d&apos;exercice avant 18h",
+        "estimatedImpact":"+15% qualité de sommeil estimée"
+    },
+    "finance":{
+        "title":"💰 Finance",
+        "priority":"medium",
+        "subTitle":"Optimiser vos d&eacute;penses de loisirs",
+        "analysis":"Vous &ecirc;tes proche de votre budget loisirs. En r&eacute;duisant de 15€/semaine, vous pourriez &eacute;conomiser 780€/an suppl&eacute;mentaires.",
+        "recommendedAction":"R&eacute;viser les abonnements inutilis&eacute;",
+        "estimatedImpact":"+780€/an d&apos;&eacute;conomies"
+    },
+    "productivity":{
+        "title":"📱 Productivit&eacute;",
+        "priority":"high",
+        "subTitle":"R&eacute;duire le temps sur les r&eacute;seaux sociaux",
+        "analysis":"Vous passez en moyenne 1h43/jour sur les r&eacute;seaux sociaux, principalement entre 20h-22h. Ce temps pourrait être réalloué &acute; vos objectifs.",
+        "recommendedAction":"Activer limite de 45 min/jour",
+        "estimatedImpact":"+7h/semaine disponibles"
+    },
+    "habits":{
+        "title":"🎯 Habitudes",
+        "priority":"low",
+        "subTitle":"Renforcer la constance de la m&eacute;ditation",
+        "analysis":"Excellent travail avec votre streak de 12 jours! Pour maximiser les b&eacute;néfices, essayez de m&eacute;diter &agrave; heure fixe chaque jour.",
+        "recommendedAction":"D&eacute;finir rappel quotidien à 7h30",
+        "estimatedImpact":"Meilleure r&eacute;gularit&eacute;"
+    },
+    "wellBeing":{
+        "title":"⚖️ Bien-être",
+        "priority":"medium",
+        "subTitle":"&Eacute;quilibrer vie pro et perso",
+        "analysis":"Vous travaillez 42h/semaine mais ne passez que 18h avec votre famille. Un meilleur &eacute;quilibre pourrait am&eacute;liorer votre bien-&ecirc;tre g&eacute;n&eacute;ral.",
+        "recommendedAction":"Bloquer 2 soir&eacute;es familiales/semaine",
+        "estimatedImpact":"+22% satisfaction de vie"
+    }
+}

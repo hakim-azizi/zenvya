@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import '../style/Menu.css'
 
 function Menu() {
-    const [image, Setimage] = useState("../images/images/menu-burger.png");
+    const [image, Setimage] = useState('../images/menu-burger.png');
     const [value, setValue] = useState(0);
     const [height, setHeight] = useState(0);
     const containerRef = useRef<HTMLUListElement | null>(null);
@@ -50,13 +50,13 @@ function Menu() {
   
     if (value === 0) {
       setValue(1);
-      Setimage("../images/images/menu-burger1.png");
+      Setimage("../images/menu-burger1.png");
       menu.style.marginTop='80px';
       menu.style.visibility = "visible";
       buttonRef.current.style.marginRight='1em';
     } else {
       setValue(0);
-      Setimage("../images/images/menu-burger.png");
+      Setimage("../images/menu-burger.png");
       menu.style.marginTop=`-${height+80}px`;
       buttonRef.current.style.marginRight='0';
           setTimeout(() => {

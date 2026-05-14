@@ -25,16 +25,6 @@ function AiConsulting() {
   
   const choice = (value:Choice)=>{
     setSelectChoice(value);
-    /* const keys = Object.keys(choiceArray);
-    for(let i=0; i < keys.length; i++) {
-      if(keys[i]===value){
-        console.log("c'est la bonne => ",keys[i]);
-        
-      }else{
-        console.log("ce n'est pas la bonne => ",keys[i]);
-
-      }
-    } */
   };
 
   return (

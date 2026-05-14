@@ -1,4 +1,4 @@
-import {useState} from 'react';
+// import {useState} from 'react';
 import Chart from '../component/Chart';
 import {percent} from '../utils/lib';
 import type { AgChartOptions } from "ag-charts-community";
@@ -7,8 +7,9 @@ import '../style/Finance.css'
 
 function Finance() {
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [optionsPie, setOptionsPie] = useState<AgChartOptions>({
+  
+  // const [optionsPie, setOptionsPie] = useState<AgChartOptions>({
+ const optionsPie: AgChartOptions =({
     data: [
     { asset: "Logement 42%", amount: 42 },
     { asset: "Santé 5%", amount: 5 },
@@ -29,8 +30,9 @@ function Finance() {
     ],
   })
  
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [optionsBar, setOptionsBar] = useState<AgChartOptions>({
+  // const [optionsBar, setOptionsBar] = useState<AgChartOptions>
+
+    const optionsBar: AgChartOptions=({
     // Data: Data to be displayed in the chart
     data: [
       { month: "Jan", avgTemp: 2.3, revenus: 3800, dépenses: 2950 },

@@ -186,8 +186,15 @@ margin: 1em 0 0 0;
 .career {
     background: #558585;
 }
+.career > p,
+.career > h2{
+    text-align: center;
+    color: #FFF;
+    width: 100%;
+}
 .career > article {
     background: #659090 !important;
+    width: 30%;
 }
 .career > article > span,
 .career > p > .border {

@@ -1,0 +1,91 @@
+.content-finances {
+        align-items: stretch;
+}
+.gauge-default {
+    background: #4C7676;
+}
+.chart {
+    background: #FFF;
+    padding: 1em;
+    border-radius: 1em;
+}
+.chart > h2 {
+    padding-bottom: 1em;
+}
+.budget > article > p {
+    display: flex;
+    justify-content: space-between;
+}
+.bold {
+    font-weight: bold;
+}
+.budget > article > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.budget > article > div  > p {
+    margin: 0;
+}
+.linear-gauge {
+    height: .5em;
+    width: 90%;
+    background: #EBE9E6;
+   }
+.linear-gauge > span {
+    display: block;
+    height: 100%;
+    width:0%
+}
+.housing {
+    background: #5090DC;
+}
+.health {
+    background: #FFA03A;
+}
+.Hobbies {
+    background: #459D55;
+}
+.transportation {
+    background: #34BFE1;
+}
+.food {
+    background: #E1CC00;
+}
+.others {
+    background: #9669CB;
+}
+.income-expenses {
+    width: 90%;
+}
+.chart > ul {
+    padding: 1em
+}
+.points-consider {
+    background-color: #FEFCE8;
+}
+.performances {
+    background-color: #F0FDF4;
+}
+.ai-tip-of-the-month {
+    background-color: #F3F6FF;
+    padding: 1em;
+    border-radius: 1em;
+}
+.ai-tip-of-the-month > * {
+    padding-bottom: 1em;
+    }
+.ai-tip-of-the-month > button {
+    border: none;
+    padding: 1em;
+    border-radius: 1em;
+    margin-right: 1em;
+}
+.ai-tip-of-the-month > .view-my-subscriptions {
+    color: #FFF;
+    background-color: #9810FA;
+    margin-bottom: 1em;
+}
+.more-advice > .view-my-subscriptions {
+    background-color: #FCFCFC;
+}

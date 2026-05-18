@@ -29,7 +29,7 @@ function AiConsulting() {
 
   return (
     <div className="content content-dashboard content-ai">
-      <header>
+      <header className='center'>
         <h1>Recommandations IA</h1>
         <p>Conseils personnalis&eacute;s bas&eacute;s sur l'analyse de vos donn&eacute;es</p>
       </header>

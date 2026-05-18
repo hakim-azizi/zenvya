@@ -1,6 +1,6 @@
 function Habits() {
   return (
-    <header>
+    <header className='center'>
 <h1>Habitudes</h1>
     </header>
   );

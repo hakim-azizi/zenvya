@@ -3,7 +3,7 @@ import '../style/NavBar.css'
 function NavBar() {
   
   return (
-    <header className='navbar'>
+    <header className='center navbar'>
         <nav>
             <ul>
                 <li>ZENVYA</li>

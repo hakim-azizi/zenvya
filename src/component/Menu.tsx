@@ -66,7 +66,7 @@ function Menu() {
   };
 
   return (
-    <header className='vertical-menu'>
+    <header className='center vertical-menu'>
     
       <div>
         <p>
@@ -98,8 +98,8 @@ function Menu() {
         <li><Link to="health">Santé</Link></li>
         <li><Link to="finance">Finances</Link></li>
         <li><Link to="past-tense">Temps</Link></li>
-        <li><Link to="habits">Habitude</Link></li>
-        <li><Link to="ai-consulting">AI conseils</Link></li>
+        <li><Link to="habits">Habitudes</Link></li>
+        <li><Link to="ai-consulting">IA conseils</Link></li>
       </ul>
     </nav>
   </header>

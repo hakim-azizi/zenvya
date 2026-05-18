@@ -1,4 +1,7 @@
+import {percent,gauge} from '../utils/lib';
+
 import "../style/Dashboard.css"
+
 function Dashboard() {
  const date = new Date();
 
@@ -6,7 +9,7 @@ const formatted = `${date.toLocaleDateString('fr-FR', { weekday: 'long' })} ${da
 
   return (
     <div className="content content-dashboard">
-      <header>
+      <header className='center'>
         <h1>Dashboard</h1>
         <h2>Bonjour! 👋</h2>
         <p>Voici votre aperçu personnel pour aujourd'hui, {formatted}.</p>
@@ -14,7 +17,7 @@ const formatted = `${date.toLocaleDateString('fr-FR', { weekday: 'long' })} ${da
       <section className="introduction">
         <article>
           Score de Bien-être IA
-          <p className="score"><span>87</span>/100</p>
+          <p className="score"><span>{percent(7,8)}</span>/100<br />Excellent progrès cette semaine! Continuez comme ça.</p>
           <p className="result">🏆 Streak de 15 jours - Hydratation</p>
         </article>
         <article className="illustration">
@@ -22,10 +25,38 @@ const formatted = `${date.toLocaleDateString('fr-FR', { weekday: 'long' })} ${da
         </article>
       </section>
       <section className="information">
-        <article className='four-parts'>santé</article>
-        <article className='four-parts'>finance</article>
-        <article className='four-parts'>Temps</article>
-        <article className='four-parts'>Habitude</article>
+        <article className='four-parts'>
+          <p>Santé</p>
+          <p>
+            <span className='bold'>9241</span><br />
+            pas aujourd'hui
+          </p>
+          {gauge(9241,10000)}
+          </article>
+        <article className='four-parts'>
+          <p>Finance</p>
+          <p>
+            <span className='bold'>{`${percent(2847,3500)} %`}</span><br />
+            budget utilisé
+          </p>
+          {gauge(2847,3500)}
+          </article>
+        <article className='four-parts'>
+          <p>Temps</p>
+          <p>
+            <span className='bold'>6.5h</span><br />
+            focus aujourd'hui
+          </p>
+          {gauge(6.5,9)}
+          </article>
+        <article className='four-parts'>
+          <p>Habitudes</p>
+                    <p>
+            <span className='bold'>{`${percent(25,35)} %`}</span><br />
+            cette semaine
+          </p>
+          {gauge(25,35)}
+          </article>
       </section>
       <section className="information">
         <h2>Recommandations IA</h2>

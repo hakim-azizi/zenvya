@@ -1,8 +1,21 @@
 import { AgCharts } from "ag-charts-react";
-import { AllCommunityModule, ModuleRegistry, } from "ag-charts-community";
+import {
+  AllCommunityModule,
+  ModuleRegistry,
+  LegendModule,
+  CategoryAxisModule,
+  LineSeriesModule,
+  NumberAxisModule
+} from "ag-charts-community";
 import type { AgChartOptions } from "ag-charts-community";
 
-ModuleRegistry.registerModules([AllCommunityModule]);
+ModuleRegistry.registerModules([
+  AllCommunityModule,
+  CategoryAxisModule,
+  LegendModule,
+  LineSeriesModule,
+  NumberAxisModule
+]);
 
 type Props = {
   options: AgChartOptions;

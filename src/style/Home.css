@@ -151,9 +151,6 @@ margin: 1em 0 0 0;
     margin: 1em 0;
     padding: 1em 0 3em 0;
 }
-.dashboard > p {
-    text-align: center;
-}
 .dashboard > article {
     background-color: #EBE9E6 !important;
 }
@@ -187,8 +184,7 @@ margin: 1em 0 0 0;
     background: #558585;
 }
 .career > p,
-.career > h2{
-    text-align: center;
+.career > h2 {
     color: #FFF;
     width: 100%;
 }
@@ -219,9 +215,6 @@ margin: 1em 0 0 0;
     flex-direction: column;
     gap: 1em;
     align-items: center;
-}
-.conclusion > p {
-    text-align: center;
 }
 .conclusion > p > span {
     background: #558585;

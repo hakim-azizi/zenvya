@@ -35,7 +35,7 @@ function Footer() {
     </article>
   </section>
   <section  className='copyright'>
-    <p>
+    <p className ='center'>
       &copy; 2026 ZENVYA. Designed by Hakim AZIZI.
     </p>
   </section>

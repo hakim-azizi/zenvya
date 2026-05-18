@@ -87,11 +87,11 @@ function Home() {
         </section>
       </div>  
       <section className='dashboard information'>
-          <p>
+          <p className='center'>
             <span className='border'>Intelligence holistique</span>
           </p>
-          <h2>Un dashboard, toute votre vie</h2>
-          <p>
+          <h2 className='center'>Un dashboard, toute votre vie</h2>
+          <p style={{width: '100%'}}>
             Santé, finances, productivité et carrière — analysés et corrélés par IA
           </p>
         <article>
@@ -138,11 +138,11 @@ Qualité de sommeil optimale après une session sport. Prévue demain?
           </aside>
         </section>
               <section className='dashboard information career'>
-          <p>
+          <p className='center'>
             <span className='border'>Career Intelligence</span>
           </p>
-          <h2>Votre coach carrière IA</h2>
-          <p>
+          <h2  className='center'>Votre coach carrière IA</h2>
+          <p  className='center'>
             CV scoring, job matching intelligent, et insights sur votre progression professionnelle
           </p>
         <article>
@@ -160,7 +160,7 @@ Qualité de sommeil optimale après une session sport. Prévue demain?
           <p><span>&#43;22&#37;</span></p>
           <span>Potentiel augmentation marché</span>
         </article>
-        <p><span className='testing'><Link to=''>Analyser mon CV maintenant &rarr;</Link></span></p>
+        <p className='center'><span className='testing'><Link to=''>Analyser mon CV maintenant &rarr;</Link></span></p>
       </section>
       <section className='conclusion'>
         <h2>Z</h2>

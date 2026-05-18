@@ -69,7 +69,7 @@ series: [
   )
 
   return (<div className='content content-finances'>
-    <header>
+    <header className='center'>
       <h1>Finances Personnelles 💰</h1>
       <p>Gérez votre budget, suivez vos dépenses et économies</p>
     </header>

@@ -1,6 +1,6 @@
 function PastTense() {
   return (
-    <header>
+    <header className='center'>
 <h1>Temps</h1>
     </header>
   );

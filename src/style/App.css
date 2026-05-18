@@ -1,8 +1,14 @@
+h1 {
+    text-align: center;
+}
 h1,
 h2,
 h3,
 .slogan {
     font-style: italic;
+}
+.center {
+    text-align: center
 }
 #contener {
     display: flex;
@@ -25,9 +31,6 @@ section {
 }
 .content > header {
     width: 100%;
-}
-header {
-    text-align: center;
 }
 h1 {
     display: inline;

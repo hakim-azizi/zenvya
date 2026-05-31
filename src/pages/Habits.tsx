@@ -1,7 +1,7 @@
 function Habits() {
   return (
-    <header className='center'>
-<h1>Habitudes</h1>
+    <header className="center">
+      <h1>Habitudes</h1>
     </header>
   );
 }

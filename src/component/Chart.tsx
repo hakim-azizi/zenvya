@@ -5,7 +5,7 @@ import {
   LegendModule,
   CategoryAxisModule,
   LineSeriesModule,
-  NumberAxisModule
+  NumberAxisModule,
 } from "ag-charts-community";
 import type { AgChartOptions } from "ag-charts-community";
 
@@ -14,7 +14,7 @@ ModuleRegistry.registerModules([
   CategoryAxisModule,
   LegendModule,
   LineSeriesModule,
-  NumberAxisModule
+  NumberAxisModule,
 ]);
 
 type Props = {
@@ -22,9 +22,7 @@ type Props = {
 };
 
 const Chart = ({ options }: Props) => {
-
   return <AgCharts options={options} />;
-  
 };
 
 export default Chart;

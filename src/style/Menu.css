@@ -1,115 +1,114 @@
 .vertical-menu {
-    background: #FFF;
-    display: flex;
-    }
-.vertical-menu  > div {
-    position:relative;
-    top: 0;
-    left: 0;
-    z-index:2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 1em;
-    color: #000;
-    opacity:1;
+  background: #fff;
+  display: flex;
+}
+.vertical-menu > div {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  color: #000;
+  opacity: 1;
 }
 .vertical-menu > div > p:first-child > a {
-    color : #4C7676;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 2em;
-    margin-top: .5em;
+  color: #4c7676;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2em;
+  margin-top: 0.5em;
 }
 .vertical-menu > div > p {
-    margin: 0;
+  margin: 0;
 }
 .vertical-menu > div > p > a {
-    color : #000;
+  color: #000;
 }
 .menu {
-    display:flex;
-    justify-content: flex-end;
-    padding:0 1em;
-    background: #FFF;
-    width:14em;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 1em;
+  background: #fff;
+  width: 14em;
 }
 .menu button {
-    display: none;
-    width: 80px;
-    height: 80px;
-    border: none;
-    background: #FFF;
+  display: none;
+  width: 80px;
+  height: 80px;
+  border: none;
+  background: #fff;
 }
 .menu ul {
-    display: flex;
-    flex-direction: column;
-    width:14em; 
+  display: flex;
+  flex-direction: column;
+  width: 14em;
 }
 .menu ul li {
-    width: 100%;
-    list-style: none;
-    border-radius: 1;
+  width: 100%;
+  list-style: none;
+  border-radius: 1;
 }
 
 @media (max-width: 800px) {
-        .vertical-menu {
-        flex-direction: row;
-        justify-content: space-between;
-        height: 81px;
-        width: 100%;  
-        position: fixed;
-        right: 0;
-        top: 0;
-    }
-    .vertical-menu,
-    .menu {
-        border-bottom: 1px solid #000;
-    }
-    .menu button {
-        display: inline;
-    }
-    .menu {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    .open-menu {
-        overflow: hidden;
-        visibility: hidden;
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin-top: -124px;
-        list-style: none;
-        background: #f1f1f1;
-        opacity: 1;
-        border-radius: 0 0 0 1rem;
-        z-index: -1;
-    }
-    
+  .vertical-menu {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 81px;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .vertical-menu,
+  .menu {
+    border-bottom: 1px solid #000;
+  }
+  .menu button {
+    display: inline;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .open-menu {
+    overflow: hidden;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -124px;
+    list-style: none;
+    background: #f1f1f1;
+    opacity: 1;
+    border-radius: 0 0 0 1rem;
+    z-index: -1;
+  }
 }
 @media (min-width: 801px) {
-    .vertical-menu {
-        flex-direction:column;
-    }
-    .vertical-menu > div {
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        height: 81px;
-        width: 14em;
-        border-bottom: 1px solid #000;
-    }
-    .open-menu {
-        position: fixed;
-        top: 81px;
-        left: 0px;
-        z-index: 1;
-    }
-    nav > ul {
-        visibility: show;
-    }
+  .vertical-menu {
+    flex-direction: column;
+  }
+  .vertical-menu > div {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 81px;
+    width: 14em;
+    border-bottom: 1px solid #000;
+  }
+  .open-menu {
+    position: fixed;
+    top: 81px;
+    left: 0px;
+    z-index: 1;
+  }
+  nav > ul {
+    visibility: show;
+  }
 }

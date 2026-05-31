@@ -1,224 +1,223 @@
-#contener-home{
-    flex-direction: column;
+#contener-home {
+  flex-direction: column;
 }
 .home {
-    justify-content: center;
-    gap: 1em;
-    padding: 1em 0 3em 0;
-    margin-top: 4.75em;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em 0 3em 0;
+  margin-top: 4.75em;
 }
 .border {
-    display: inline;
-    padding: .5em;
-    font-size: .7em;
-    font-weight: bold;
-    background: #c4c2bf;
-    border-radius: 1em;
+  display: inline;
+  padding: 0.5em;
+  font-size: 0.7em;
+  font-weight: bold;
+  background: #c4c2bf;
+  border-radius: 1em;
 }
 .slogan {
-    margin-top:1em;
-        font-size: 5em;
+  margin-top: 1em;
+  font-size: 5em;
 }
 p {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 .espacement {
-    display: flex;
-    justify-content: space-around;
-
+  display: flex;
+  justify-content: space-around;
 }
 .begin-free {
-    background: #4C7676;
-    font-weight: bold;
-    padding: .5em;
-    border-radius: .5em;
-    margin:1em 0 0 .5em;
-    display:inline-block;
+  background: #4c7676;
+  font-weight: bold;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin: 1em 0 0 0.5em;
+  display: inline-block;
 }
 .begin-free > a {
-    color: #FFF;
+  color: #fff;
 }
 .demo {
-    background: #c4c2bf;
-    font-weight: bold;
-    padding: .5em;
-    border-radius: .5em;
-    margin:1em 0 0 .5em;
-    display:inline-block;
+  background: #c4c2bf;
+  font-weight: bold;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin: 1em 0 0 0.5em;
+  display: inline-block;
 }
 .demo > a {
-    color: #000;
+  color: #000;
 }
 .limit {
-    padding:1em;
-    border-radius: 1em 1em 0 0;
-    background: #4C7676;
-    width: 100%;
+  padding: 1em;
+  border-radius: 1em 1em 0 0;
+  background: #4c7676;
+  width: 100%;
 }
 .limit ul {
-    display: flex;
-    justify-content: space-between;
-    color: #FFF;
-   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  list-style: none;
 }
 .limit ul li {
-    padding: .5em;
-    font-weight: bold;
+  padding: 0.5em;
+  font-weight: bold;
 }
-.preview{
-    border-radius: 1em;
-    background: #71acac;
+.preview {
+  border-radius: 1em;
+  background: #71acac;
 }
 .limit div {
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
 }
 .limit > div > p {
-    display:flex;
-    flex-direction:column;
-    justify-content: space-around;
-    width: 45%;
-    color: #FFF;
-    border-radius: 1em;
-    background: #71acac;
-    padding: 1em;
-    font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 45%;
+  color: #fff;
+  border-radius: 1em;
+  background: #71acac;
+  padding: 1em;
+  font-weight: bold;
 }
-.limit > div > p > span{
-font-size: 1.5em;
+.limit > div > p > span {
+  font-size: 1.5em;
 }
 .activity {
-    background: #FFF;
-    width: 100%;
-    padding: 1em;
+  background: #fff;
+  width: 100%;
+  padding: 1em;
 }
 .activity ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: .5em;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5em;
 }
 .activity ul li:first-child {
-    grid-column: 1 / -1;
-    font-weight: bold;
+  grid-column: 1 / -1;
+  font-weight: bold;
 }
 .activity ul li:not(:first-child) {
-    list-style: none;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    border-radius: .5em;
+  list-style: none;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 0.5em;
 }
 .color-1 {
-    background: #4C7676;
+  background: #4c7676;
 }
 .color-2 {
-    background: #EBE9E6;
+  background: #ebe9e6;
 }
 .color-3 {
-   background: #c4c2bf;
+  background: #c4c2bf;
 }
 .color-4 {
-    background: #71acac;
+  background: #71acac;
 }
 
 .recommendation {
-    padding: 0;
-    border-radius: 0 0 1em 1em;
+  padding: 0;
+  border-radius: 0 0 1em 1em;
 }
 .recommendation div {
-    padding: 1em;
-    background: #F5F2ED;
-    width:100%
+  padding: 1em;
+  background: #f5f2ed;
+  width: 100%;
 }
 .recommendation div p {
-margin: 1em 0 0 0;
+  margin: 1em 0 0 0;
 }
 .bottom {
-    border-radius: 0 0 1em 1em;
-    margin: 0;
-    padding: 0 1em 1em 1em;
-    background: #FFF;
+  border-radius: 0 0 1em 1em;
+  margin: 0;
+  padding: 0 1em 1em 1em;
+  background: #fff;
 }
 .adjust {
-    min-width: 208px;
+  min-width: 208px;
 }
 .dashboard {
-    display: flex;
-    flex-wrap: wrap;
-    background: #FFF;
-    width: 100% !important;
-    margin: 1em 0;
-    padding: 1em 0 3em 0;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  width: 100% !important;
+  margin: 1em 0;
+  padding: 1em 0 3em 0;
 }
 .dashboard > article {
-    background-color: #EBE9E6 !important;
+  background-color: #ebe9e6 !important;
 }
 .smart-notification {
-    display: inline-block;
-    background-color: #F2E7DB;
-    color: #CB945C;
-    width: auto;
+  display: inline-block;
+  background-color: #f2e7db;
+  color: #cb945c;
+  width: auto;
 }
 .hour {
-    background: #FFF;
-    padding: 1em;
-    border-radius: 1em;
+  background: #fff;
+  padding: 1em;
+  border-radius: 1em;
 }
 .hour > span {
-    padding: 1em;
-    font-size: .7em;
+  padding: 1em;
+  font-size: 0.7em;
 }
 .photo {
-    background: #F5F2ED;
-    border-radius: 1em;
-    min-width: 240px;
-    padding: 0;
+  background: #f5f2ed;
+  border-radius: 1em;
+  min-width: 240px;
+  padding: 0;
 }
 .limit > img {
-    width: 100%;
-    height: auto;
-    border-radius: 1em;
+  width: 100%;
+  height: auto;
+  border-radius: 1em;
 }
 .career {
-    background: #558585;
+  background: #558585;
 }
 .career > p,
 .career > h2 {
-    color: #FFF;
-    width: 100%;
+  color: #fff;
+  width: 100%;
 }
 .career > article {
-    background: #659090 !important;
-    width: 30%;
+  background: #659090 !important;
+  width: 30%;
 }
 .career > article > span,
 .career > p > .border {
-        background: #659090;
-        color: #FFF;
-} 
+  background: #659090;
+  color: #fff;
+}
 .career > article > p > span {
-   font-size: 2em;
-   font-weight: bold;
+  font-size: 2em;
+  font-weight: bold;
 }
 .testing {
-    font-weight: bold;
-    padding: 1em;
-    background: #FFF;
-    border-radius: 1em;
+  font-weight: bold;
+  padding: 1em;
+  background: #fff;
+  border-radius: 1em;
 }
 .testing > a {
-    color: #558585;
+  color: #558585;
 }
 .conclusion {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
 }
 .conclusion > p > span {
-    background: #558585;
+  background: #558585;
 }
 .conclusion > p > span > a {
-    color: #FFF;
+  color: #fff;
 }

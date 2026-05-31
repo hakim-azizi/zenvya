@@ -1,91 +1,97 @@
-.content-finances {
-        align-items: stretch;
+.content-charts {
+  align-items: stretch;
 }
 .gauge-default {
-    background: #4C7676;
+  background: #4c7676;
 }
 .chart {
-    background: #FFF;
-    padding: 1em;
-    border-radius: 1em;
+  background: #fff;
+  padding: 1em;
+  border-radius: 1em;
 }
 .chart > h2 {
-    padding-bottom: 1em;
+  padding-bottom: 1em;
 }
 .budget > article > p {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 .budget > article > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.budget > article > div  > p {
-    margin: 0;
+.budget > article > div > p {
+  margin: 0;
 }
 .linear-gauge {
-    height: .5em;
-    width: 90%;
-    background: #EBE9E6;
-   }
+  height: 0.5em;
+  width: 90%;
+  background: #ebe9e6;
+}
 .linear-gauge > span {
-    display: block;
-    height: 100%;
-    width:0%
+  display: block;
+  height: 100%;
+  width: 0%;
 }
-.housing {
-    background: #5090DC;
+.linear-gauge-color-1 {
+  background: #5090dc;
 }
-.health {
-    background: #FFA03A;
+.linear-gauge-color-2 {
+  background: #ffa03a;
 }
-.Hobbies {
-    background: #459D55;
+.linear-gauge-color-3 {
+  background: #459d55;
 }
-.transportation {
-    background: #34BFE1;
+.linear-gauge-color-4 {
+  background: #34bfe1;
 }
-.food {
-    background: #E1CC00;
+.linear-gauge-color-5 {
+  background: #e1cc00;
 }
-.others {
-    background: #9669CB;
+.linear-gauge-color-6 {
+  background: #9669cb;
+}
+.linear-gauge-color-7 {
+  background: #b5b5b5;
+}
+.linear-gauge-color-8 {
+  background: #bd5aa7;
 }
 .income-expenses {
-    width: 90%;
+  width: 90%;
 }
 .chart > ul {
-    padding: 1em
+  padding: 1em;
 }
 .points-consider {
-    background-color: #FEFCE8;
+  background-color: #fefce8;
 }
 .performances {
-    background-color: #F0FDF4;
+  background-color: #f0fdf4;
 }
 .ai-tip-of-the-month {
-    background-color: #F3F6FF;
-    padding: 1em;
-    border-radius: 1em;
+  background-color: #f3f6ff;
+  padding: 1em;
+  border-radius: 1em;
 }
 .ai-tip-of-the-month > * {
-    padding-bottom: 1em;
-    }
+  padding-bottom: 1em;
+}
 .ai-tip-of-the-month > button {
-    border: none;
-    padding: 1em;
-    border-radius: 1em;
-    margin-right: 1em;
+  border: none;
+  padding: 1em;
+  border-radius: 1em;
+  margin-right: 1em;
 }
 .ai-tip-of-the-month > .view-my-subscriptions {
-    color: #FFF;
-    background-color: #9810FA;
-    margin-bottom: 1em;
+  color: #fff;
+  background-color: #9810fa;
+  margin-bottom: 1em;
 }
 .more-advice > .view-my-subscriptions {
-    background-color: #FCFCFC;
+  background-color: #fcfcfc;
 }

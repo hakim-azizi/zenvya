@@ -1,19 +1,19 @@
 .response {
-    background: #FFF;
-    display:flex;
-    flex-direction:column;
-    gap:1em;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 .response > article {
-    padding:1em;
-    border-radius:1em;
+  padding: 1em;
+  border-radius: 1em;
 }
-.analysis{
-    background: #FFF;
+.analysis {
+  background: #fff;
 }
 .recommended-action {
-    background: #EFF6FF;
+  background: #eff6ff;
 }
 .estimated-impact {
-    background: #F0FDF4;
+  background: #f0fdf4;
 }

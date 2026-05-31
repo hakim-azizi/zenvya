@@ -1,71 +1,68 @@
 h1 {
-    text-align: center;
+  text-align: center;
 }
 h1,
 h2,
 h3,
 .slogan {
-    font-style: italic;
+  font-style: italic;
 }
 .center {
-    text-align: center
+  text-align: center;
 }
 #contener {
-    display: flex;
-    min-height: 100vh;
-    width: 100%;
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
 }
 section {
-    width: 45%;
-    min-width: 240px;
+  width: 45%;
+  min-width: 240px;
 }
 .content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    flex: 1;
-    margin: 5.75em 0 1em 0;
-    gap: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  flex: 1;
+  margin: 5.75em 0 1em 0;
+  gap: 1em;
 }
 .content > header {
-    width: 100%;
+  width: 100%;
 }
 h1 {
-    display: inline;
+  display: inline;
 }
-header h2, header p {
-    text-align: left;
+header h2,
+header p {
+  text-align: left;
 }
 .begin > a,
 .menu > ul > li > a {
-    display: block;
-    height:100%;
-    padding: .5em;
-    font-weight: bold;
-    border-radius: .5em;
+  display: block;
+  height: 100%;
+  padding: 0.5em;
+  font-weight: bold;
+  border-radius: 0.5em;
 }
 .menu > ul > li > a {
-    color: #4C7676;
+  color: #4c7676;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
- a:hover {
-    text-decoration: underline;
+a:hover {
+  text-decoration: underline;
 }
 @media (max-width: 800px) {
-.content {
+  .content {
     margin: 5.75em 0 1em 0;
-    }
+  }
 }
 @media (min-width: 801px) {
-.content {
+  .content {
     margin: 1em 0 1em 0;
-    }
+  }
 }
-
-
-
-

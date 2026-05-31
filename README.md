@@ -1,4 +1,3 @@
-
 # ZenVia
 
 🌍 Choisissez votre langue / Choose your language:
@@ -19,6 +18,7 @@
 Aujourd’hui, il est difficile de prendre du recul sur ses habitudes, sa productivité ou son évolution professionnelle.
 
 ZenVia vous permet de :
+
 - visualiser vos données personnelles simplement
 - comprendre vos comportements
 - recevoir des recommandations personnalisées
@@ -28,21 +28,25 @@ ZenVia vous permet de :
 ## 🚀 Fonctionnalités principales
 
 ### 📊 Suivi de votre quotidien
+
 - productivité
 - habitudes
 - évolution dans le temps
 
 ### 🤖 Recommandations intelligentes
+
 - analyse de vos données
 - suggestions personnalisées
 - insights clairs et exploitables
 
 ### 📈 Visualisation intuitive
+
 - graphiques interactifs
 - évolution de vos performances
 - corrélations entre vos données
 
 ### 🔐 Sécurité
+
 - vos données sont protégées
 - authentification sécurisée
 
@@ -51,6 +55,7 @@ ZenVia vous permet de :
 ## 📱 Plateformes
 
 ZenVia est disponible en :
+
 - 🌐 application web
 - 📱 application mobile
 
@@ -95,6 +100,7 @@ ZenVia a pour objectif de devenir un véritable **assistant intelligent du quoti
 It’s often difficult to step back and analyze your habits, productivity, and career progression.
 
 ZenVia helps you:
+
 - visualize your personal data
 - understand your behavior
 - receive personalized recommendations
@@ -104,21 +110,25 @@ ZenVia helps you:
 ## 🚀 Key Features
 
 ### 📊 Daily tracking
+
 - productivity
 - habits
 - progress over time
 
 ### 🤖 Smart recommendations
+
 - data analysis
 - personalized insights
 - actionable suggestions
 
 ### 📈 Data visualization
+
 - interactive charts
 - performance tracking
 - correlations between data
 
 ### 🔐 Security
+
 - your data is protected
 - secure authentication
 
@@ -127,6 +137,7 @@ ZenVia helps you:
 ## 📱 Platforms
 
 ZenVia is available on:
+
 - 🌐 web application
 - 📱 mobile application
 
@@ -160,8 +171,7 @@ ZenVia aims to become a true **intelligent life assistant**, helping users make 
 
 ---
 
-
 ## 👤 Auteur / Author
 
-- Hakim AZIZI 
+- Hakim AZIZI
 - GitHub : https://github.com/hakim-azizi/

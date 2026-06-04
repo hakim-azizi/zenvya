@@ -11,7 +11,7 @@ import Dashboard from "./pages/Dashboard.tsx";
 import Finance from "./pages/Finance.tsx";
 import Habits from "./pages/Habits.tsx";
 import Health from "./pages/Health.tsx";
-import PastTense from "./pages/PastTense.tsx";
+import TimeManagement from "./pages/TimeManagement.tsx";
 
 // Configure the application's routing structure
 export const router = createBrowserRouter(
@@ -30,7 +30,7 @@ export const router = createBrowserRouter(
       {/* Define the default (index) route to render the Home page */}
       <Route path="health" element={<Health />} />
       {/* Define the default (index) route to render the Home page */}
-      <Route path="past-tense" element={<PastTense />} />
+      <Route path="time-management" element={<TimeManagement />} />
       {/* Define the default (index) route to render the Home page */}
     </Route>,
   ),

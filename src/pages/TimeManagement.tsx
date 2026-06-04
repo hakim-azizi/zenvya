@@ -1,7 +1,7 @@
 import Chart from "../component/Chart";
 import { gauge, percent, optionsChart } from "../utils/lib";
 
-function PastTense() {
+function TimeManagement() {
   return (
     <div className="content content-charts">
       <header className="center">
@@ -133,4 +133,4 @@ function PastTense() {
     </div>
   );
 }
-export default PastTense;
+export default TimeManagement;

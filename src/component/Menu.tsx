@@ -8,14 +8,19 @@ function Menu() {
   const [image, Setimage] = useState("../images/menu-burger.png");
   const [value, setValue] = useState(0);
   const [height, setHeight] = useState(0);
+  const [navBarWidth, SetNavBarWidth] = useState(0);
+  const navBarRef = useRef<HTMLElement | null>(null);
   const containerRef = useRef<HTMLUListElement | null>(null);
   const buttonRef = useRef<HTMLButtonElement | null>(null);
   const [windowWidth, setWindowWidth] = useState<boolean>(
     window.matchMedia("(min-width: 801px)").matches,
   );
-  const measureHeight = () => {
+  const measure = () => {
     if (containerRef.current) {
       setHeight(containerRef.current.scrollHeight);
+    }
+    if (navBarRef.current) {
+      SetNavBarWidth(navBarRef.current.scrollWidth);
     }
   };
   const menu = containerRef.current;
@@ -23,9 +28,12 @@ function Menu() {
     window.addEventListener("resize", () => {
       const menu = containerRef.current;
 
+      measure();
+
       if (!menu) return;
 
       setWindowWidth(window.matchMedia("(min-width: 801px)").matches);
+
       if (window.matchMedia("(min-width: 801px)").matches) {
         menu.style.visibility = "visible";
         menu.style.marginTop = "0";
@@ -39,10 +47,10 @@ function Menu() {
         }
       }
     });
-  }, [windowWidth, height, value]);
+  }, [windowWidth, height, value, navBarWidth]);
 
   useEffect(() => {
-    measureHeight();
+    measure();
   }, []);
 
   const openMenu = () => {
@@ -66,7 +74,7 @@ function Menu() {
   };
 
   return (
-    <header className="center vertical-menu">
+    <header className="center vertical-menu" ref={navBarRef}>
       <div>
         <p>
           <Link to="./">Z</Link>
@@ -90,6 +98,7 @@ function Menu() {
           style={{
             transition: "margin-top 0.3s ease",
           }}
+          onClick={navBarWidth !== 224 ? openMenu : undefined}
         >
           <li>
             <Link to="dashboard">Dashboard</Link>
@@ -101,7 +110,7 @@ function Menu() {
             <Link to="finance">Finances</Link>
           </li>
           <li>
-            <Link to="past-tense">Temps</Link>
+            <Link to="time-management">Temps</Link>
           </li>
           <li>
             <Link to="habits">Habitudes</Link>

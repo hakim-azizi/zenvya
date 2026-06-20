@@ -1,0 +1,60 @@
+.habits {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.border-article {
+  border: 1px solid #e5e7eb;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.new-habits {
+  background: #fff;
+  padding: 1em;
+  border-radius: 1em;
+  width: 90%;
+}
+
+.habits-button {
+  padding: 1em;
+  border-radius: 1em;
+  color: #fff;
+  background: #4c7676;
+  border: 1px solid #4c7676;
+}
+
+.ai-consultancy > .habits-button {
+  margin-top: 1em;
+}
+
+.habits-button:hover {
+  color: #4c7676;
+  background: #fff;
+  border: 1px solid #4c7676;
+}
+
+.recent-achievements {
+  width: 90%;
+  background: #eff6ff;
+  border: 1px solid #bedbff;
+}
+
+.ai-consultancy {
+  width: 90%;
+  background: #f0fcf7;;
+  border: 1px solid #afcec1;;
+}
+
+.ai-consultancy > article {
+  background: #FFF;
+  padding: 1em;
+  border-radius: 1em;
+}

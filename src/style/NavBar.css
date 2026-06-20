@@ -9,12 +9,14 @@
   height: 4.75em;
   border: 1px solid #e9e9e9;
 }
+
 .navbar > nav {
   display: flex;
   flex: 1;
   align-items: center;
   height: 100%;
 }
+
 .navbar > nav > ul {
   display: flex;
   flex: 1;
@@ -25,19 +27,23 @@
   width: 100%;
   padding: 0.5em;
 }
+
 .navbar > nav > ul > li {
   list-style: none;
   padding: 0.5em;
 }
+
 .begin {
   font-weight: bold;
   padding: 0.5em;
   border-radius: 0.5em;
 }
+
 .begin > a {
   background: #4c7676;
   color: #fff;
 }
+
 .begin > a:hover {
   background: #fff;
   color: #4c7676;

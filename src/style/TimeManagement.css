@@ -1,0 +1,19 @@
+.positive-points {
+  background: #eff6ff;
+  border: 1px solid #bedbff;
+}
+
+.needs-improvement {
+  background: #fefce8;
+  border: 1px solid #fff085;
+}
+
+.ai-productivity-council {
+  background: #f0fcf7;
+}
+
+.ai-productivity-council > article {
+  padding: 1em;
+  background: #fff;
+  border-radius: 1em;
+}

@@ -1,4 +1,4 @@
-import Chart from "../component/Chart";
+import Chart from "../components/Chart";
 import { optionsChart } from "../utils/lib";
 import { gauge } from "../utils/lib";
 

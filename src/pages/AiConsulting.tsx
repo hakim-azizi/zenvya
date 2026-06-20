@@ -1,6 +1,6 @@
 import { Fragment, useState, useRef } from "react";
 
-import AIConsultingResponse from "../component/AIConsultingResponse";
+import AIConsultingResponse from "../components/AIConsultingResponse";
 
 import "../style/AiConsulting.css";
 

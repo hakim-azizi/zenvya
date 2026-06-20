@@ -49,12 +49,12 @@
 
 .ai-consultancy {
   width: 90%;
-  background: #f0fcf7;;
-  border: 1px solid #afcec1;;
+  background: #f0fcf7;
+  border: 1px solid #afcec1;
 }
 
 .ai-consultancy > article {
-  background: #FFF;
+  background: #fff;
   padding: 1em;
   border-radius: 1em;
 }

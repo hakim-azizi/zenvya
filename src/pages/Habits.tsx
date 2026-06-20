@@ -213,19 +213,22 @@ function Habits() {
       </section>
       <section className="recent-achievements chart">
         <h3>Réalisations récentes</h3>
-
       </section>
       <section className="ai-consultancy chart">
         <h3>💡 Conseil IA d'habitudes</h3>
-        <p>Vos données montrent que vous êtes très régulier avec la méditation le matin. Pour maximiser les bénéfices, essayez de méditer à la même heure chaque jour (idéalement à 7h30).</p>
+        <p>
+          Vos données montrent que vous êtes très régulier avec la méditation le
+          matin. Pour maximiser les bénéfices, essayez de méditer à la même
+          heure chaque jour (idéalement à 7h30).
+        </p>
         <article className="">
           <p>Nouvelles habitudes recommandées:</p>
-          <ul style={{listStyle:"none"}}>
+          <ul style={{ listStyle: "none" }}>
             <li>🌱 Journal de gratitude (3 min/jour)</li>
             <li>🚶 Marche quotidienne (20 min)</li>
           </ul>
         </article>
-          <button className="bold habits-button">Ajouter ces habitudes</button>
+        <button className="bold habits-button">Ajouter ces habitudes</button>
       </section>
     </div>
   );

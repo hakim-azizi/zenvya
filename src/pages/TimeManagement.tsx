@@ -1,5 +1,7 @@
-import Chart from "../component/Chart";
+import Chart from "../components/Chart";
 import { gauge, percent, optionsChart } from "../utils/lib";
+
+import "../style/TimeManagement.css";
 
 function TimeManagement() {
   return (
@@ -124,10 +126,47 @@ function TimeManagement() {
           </div>
         </article>
       </section>
-      <section className="chart chart income-expenses">
+      <section className="chart income-expenses">
         <h2>Temps focus vs distractions</h2>
         <article>
           <Chart options={optionsChart("TimeForFocusAndDistractions")} />
+        </article>
+      </section>
+
+      <section className="chart budget positive-points">
+        <h2>Points positifs</h2>
+        <article>
+          <ul style={{ padding: "1em" }}>
+            <li>Excellent temps de focus en début de semaine</li>
+            <li>Bon équilibre travail-vie personnelle</li>
+            <li>Temps de sommeil respecté</li>
+          </ul>
+        </article>
+      </section>
+      <section className="chart budget needs-improvement">
+        <h2>À améliorer</h2>
+        <article>
+          <ul style={{ padding: "1em" }}>
+            <li>Réduire temps réseaux sociaux (12h/semaine)</li>
+            <li>Plus de temps en famille le soir</li>
+            <li>Limiter distractions en semaine</li>
+          </ul>
+        </article>
+      </section>
+      <section className="chart income-expenses ai-productivity-council">
+        <h2>Conseil IA de productivité</h2>
+        <p>
+          Vos données montrent que vous êtes le plus productif entre 9h et 12h.
+          Bloquez ce créneau pour vos tâches les plus importantes et évitez les
+          réunions pendant ces heures.
+        </p>
+        <article>
+          <h3>Impact estimé:</h3>
+          <ul style={{ padding: "1em" }}>
+            <li>+25% de productivité</li>
+            <li>-40% de stress</li>
+            <li>7h/semaine de temps focus supplémentaire</li>
+          </ul>
         </article>
       </section>
     </div>

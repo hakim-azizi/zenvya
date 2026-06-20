@@ -1,12 +1,14 @@
 #contener-home {
   flex-direction: column;
 }
+
 .home {
   justify-content: center;
   gap: 1em;
   padding: 1em 0 3em 0;
   margin-top: 4.75em;
 }
+
 .border {
   display: inline;
   padding: 0.5em;
@@ -15,17 +17,21 @@
   background: #c4c2bf;
   border-radius: 1em;
 }
+
 .slogan {
   margin-top: 1em;
   font-size: 5em;
 }
+
 p {
   margin: 1em 0;
 }
+
 .espacement {
   display: flex;
   justify-content: space-around;
 }
+
 .begin-free {
   background: #4c7676;
   font-weight: bold;
@@ -34,9 +40,11 @@ p {
   margin: 1em 0 0 0.5em;
   display: inline-block;
 }
+
 .begin-free > a {
   color: #fff;
 }
+
 .demo {
   background: #c4c2bf;
   font-weight: bold;
@@ -45,34 +53,41 @@ p {
   margin: 1em 0 0 0.5em;
   display: inline-block;
 }
+
 .demo > a {
   color: #000;
 }
+
 .limit {
   padding: 1em;
   border-radius: 1em 1em 0 0;
   background: #4c7676;
   width: 100%;
 }
+
 .limit ul {
   display: flex;
   justify-content: space-between;
   color: #fff;
   list-style: none;
 }
+
 .limit ul li {
   padding: 0.5em;
   font-weight: bold;
 }
+
 .preview {
   border-radius: 1em;
   background: #71acac;
 }
+
 .limit div {
   display: flex;
   justify-content: space-around;
   align-items: stretch;
 }
+
 .limit > div > p {
   display: flex;
   flex-direction: column;
@@ -84,64 +99,82 @@ p {
   padding: 1em;
   font-weight: bold;
 }
+
 .limit > div > p > span {
   font-size: 1.5em;
 }
+
 .activity {
   background: #fff;
   width: 100%;
   padding: 1em;
 }
+
 .activity ul {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 0.5em;
 }
+
 .activity ul li:first-child {
   grid-column: 1 / -1;
   font-weight: bold;
 }
+
 .activity ul li:not(:first-child) {
   list-style: none;
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 0.5em;
 }
+
 .color-1 {
   background: #4c7676;
 }
+
 .color-2 {
   background: #ebe9e6;
 }
+
 .color-3 {
   background: #c4c2bf;
 }
+
 .color-4 {
   background: #71acac;
+}
+
+.color-5 {
+  background: #fff;
 }
 
 .recommendation {
   padding: 0;
   border-radius: 0 0 1em 1em;
 }
+
 .recommendation div {
   padding: 1em;
   background: #f5f2ed;
   width: 100%;
 }
+
 .recommendation div p {
   margin: 1em 0 0 0;
 }
+
 .bottom {
   border-radius: 0 0 1em 1em;
   margin: 0;
   padding: 0 1em 1em 1em;
   background: #fff;
 }
+
 .adjust {
   min-width: 208px;
 }
+
 .dashboard {
   display: flex;
   flex-wrap: wrap;
@@ -150,74 +183,90 @@ p {
   margin: 1em 0;
   padding: 1em 0 3em 0;
 }
+
 .dashboard > article {
   background-color: #ebe9e6 !important;
 }
+
 .smart-notification {
   display: inline-block;
   background-color: #f2e7db;
   color: #cb945c;
   width: auto;
 }
+
 .hour {
   background: #fff;
   padding: 1em;
   border-radius: 1em;
 }
+
 .hour > span {
   padding: 1em;
   font-size: 0.7em;
 }
+
 .photo {
   background: #f5f2ed;
   border-radius: 1em;
   min-width: 240px;
   padding: 0;
 }
+
 .limit > img {
   width: 100%;
   height: auto;
   border-radius: 1em;
 }
+
 .career {
   background: #558585;
 }
+
 .career > p,
 .career > h2 {
   color: #fff;
   width: 100%;
 }
+
 .career > article {
   background: #659090 !important;
   width: 30%;
 }
+
 .career > article > span,
 .career > p > .border {
   background: #659090;
   color: #fff;
 }
+
 .career > article > p > span {
   font-size: 2em;
   font-weight: bold;
 }
+
 .testing {
   font-weight: bold;
   padding: 1em;
   background: #fff;
   border-radius: 1em;
 }
+
 .testing > a {
   color: #558585;
 }
+
 .conclusion {
   display: flex;
   flex-direction: column;
   gap: 1em;
   align-items: center;
 }
+
 .conclusion > p > span {
   background: #558585;
 }
+
 .conclusion > p > span > a {
   color: #fff;
 }

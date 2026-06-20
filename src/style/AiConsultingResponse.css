@@ -4,16 +4,20 @@
   flex-direction: column;
   gap: 1em;
 }
+
 .response > article {
   padding: 1em;
   border-radius: 1em;
 }
+
 .analysis {
   background: #fff;
 }
+
 .recommended-action {
   background: #eff6ff;
 }
+
 .estimated-impact {
   background: #f0fdf4;
 }

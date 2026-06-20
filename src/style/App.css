@@ -1,24 +1,29 @@
 h1 {
   text-align: center;
 }
+
 h1,
 h2,
 h3,
 .slogan {
   font-style: italic;
 }
+
 .center {
   text-align: center;
 }
+
 #contener {
   display: flex;
   min-height: 100vh;
   width: 100%;
 }
+
 section {
   width: 45%;
   min-width: 240px;
 }
+
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -28,16 +33,20 @@ section {
   margin: 5.75em 0 1em 0;
   gap: 1em;
 }
+
 .content > header {
   width: 100%;
 }
+
 h1 {
   display: inline;
 }
+
 header h2,
 header p {
   text-align: left;
 }
+
 .begin > a,
 .menu > ul > li > a {
   display: block;
@@ -46,20 +55,29 @@ header p {
   font-weight: bold;
   border-radius: 0.5em;
 }
+
 .menu > ul > li > a {
   color: #4c7676;
 }
+
 a {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 @media (max-width: 800px) {
   .content {
     margin: 5.75em 0 1em 0;
   }
+
+  section {
+    max-width: 240px;
+  }
 }
+
 @media (min-width: 801px) {
   .content {
     margin: 1em 0 1em 0;

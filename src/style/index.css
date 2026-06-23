@@ -8,3 +8,7 @@ body {
   padding: 0;
   font-family: "Fraunces";
 }
+
+div[data-ag-charts] {
+  min-width: 0 !important;
+}

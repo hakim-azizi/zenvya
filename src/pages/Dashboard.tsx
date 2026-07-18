@@ -1,3 +1,10 @@
+import Information from "../components/Information";
+import AIRecommendations from "../components/AIRecommendations.tsx";
+import type {
+  InformationType,
+  RecommendationsType,
+  ConsiderType,
+} from "../type/Type.tsx";
 import { percent, gauge } from "../utils/lib";
 
 import "../style/Dashboard.css";
@@ -5,14 +12,80 @@ import "../style/Dashboard.css";
 function Dashboard() {
   const date = new Date();
 
-  const formatted = `${date.toLocaleDateString("fr-FR", { weekday: "long" })} ${date.toLocaleDateString("fr-FR", { day: "2-digit", month: "long", year: "numeric" })}`;
+  const todaySDate = `${date.toLocaleDateString("fr-FR", { weekday: "long" })} ${date.toLocaleDateString("fr-FR", { day: "2-digit", month: "long", year: "numeric" })}`;
+  const informationArray: InformationType[] = [
+    {
+      category: "Santé",
+      value: `${9241}`,
+      information: "pas aujourd'hui",
+      percent: `${percent(9241, 10000, true)}%`,
+      gauge: gauge(9241, 10000),
+    },
+    {
+      category: "Finances",
+      value: `${percent(81, 100, true)}%`,
+      information: "budjet urilisé",
+      percent: "",
+      gauge: gauge(81, 100),
+    },
+    {
+      category: "Temps",
+      value: `${6.5}h`,
+      information: "focus aujourd'hui",
+      percent: `${percent(17.5, 24, true)}%`,
+      gauge: gauge(17.5, 24),
+    },
+    {
+      category: "Habitudes",
+      value: `${percent(72, 100, true)}%`,
+      information: "cette semaine",
+      percent: "",
+      gauge: gauge(72, 100),
+    },
+  ];
+
+  const recommendationsArray: RecommendationsType[] = [
+    {
+      emojie: "😴",
+      title: "Santé",
+      subtitle: "Améliorer la qualité du sommeil",
+      description:
+        "Vos données montrent que votre sommeil est de meilleure qualité les jours où vous faites de l'exercice. Essayez d'augmenter votre activité physique en semaine.",
+      result: "+15% qualité de sommeil estimée",
+    },
+    {
+      emojie: "💰",
+      title: "Finance",
+      subtitle: "Optimiser vos dépenses de loisirs",
+      description:
+        "Vous êtes proche de votre budget loisirs. En réduisant de 15€/semaine, vous pourriez économiser 780€/an supplémentaires.",
+      result: "+780€/an d'économies",
+    },
+    {
+      emojie: "📱",
+      title: "Productivité",
+      subtitle: "Réduire le temps sur les réseaux sociaux",
+      description:
+        "Vous passez en moyenne 1h43/jour sur les réseaux sociaux, principalement entre 20h-22h. Ce temps pourrait être réalloué à vos objectifs.",
+      result: "+7h/semaine disponibles",
+    },
+  ];
+
+  const pointsToConsider: ConsiderType[] = [
+    {
+      point: "Sommeil en semaine",
+    },
+    {
+      point: "Temps d'écran",
+    },
+  ];
 
   return (
     <div className="content content-dashboard">
       <header className="center">
         <h1>Dashboard</h1>
         <h2>Bonjour! 👋</h2>
-        <p>Voici votre aperçu personnel pour aujourd'hui, {formatted}.</p>
+        <p>Voici votre aperçu personnel pour aujourd'hui, {todaySDate}.</p>
       </header>
       <section className="introduction">
         <article>
@@ -29,102 +102,23 @@ function Dashboard() {
         </article>
       </section>
       <section className="information">
-        <article className="four-parts">
-          <p>Santé</p>
-          <p>
-            <span className="bold">9241</span>
-            <br />
-            pas aujourd'hui
-          </p>
-          {gauge(9241, 10000)}
-        </article>
-        <article className="four-parts">
-          <p>Finance</p>
-          <p>
-            <span className="bold">{`${percent(2847, 3500)} %`}</span>
-            <br />
-            budget utilisé
-          </p>
-          {gauge(2847, 3500)}
-        </article>
-        <article className="four-parts">
-          <p>Temps</p>
-          <p>
-            <span className="bold">6.5h</span>
-            <br />
-            focus aujourd'hui
-          </p>
-          {gauge(6.5, 9)}
-        </article>
-        <article className="four-parts">
-          <p>Habitudes</p>
-          <p>
-            <span className="bold">{`${percent(25, 35)} %`}</span>
-            <br />
-            cette semaine
-          </p>
-          {gauge(25, 35)}
-        </article>
+        {informationArray.map((informationMap) => (
+          <Information informationArray={informationMap} />
+        ))}
       </section>
       <section className="information">
         <h2>Recommandations IA</h2>
-        <article className="three-parts">
-          <p>
-            <span>😴</span>
-            <span className="border">Santé</span>
-          </p>
-          <h3>Améliorer la qualité du sommeil</h3>
-          <p>
-            Vos données montrent que votre sommeil est de meilleure qualité les
-            jours où vous faites de l'exercice. Essayez d'augmenter votre
-            activité physique en semaine.
-          </p>
-          <p className="border">
-            Impact estimé:
-            <br />
-            +15% qualité de sommeil estimée
-          </p>
-        </article>
-        <article className="three-parts">
-          <p>
-            <span>💰</span>
-            <span className="border">Finance</span>
-          </p>
-          <h3>Optimiser vos dépenses de loisirs</h3>
-          <p>
-            Vous êtes proche de votre budget loisirs. En réduisant de
-            15€/semaine, vous pourriez économiser 780€/an supplémentaires.
-          </p>
-          <p className="border">
-            Impact estimé:
-            <br />
-            +780€/an d'économies
-          </p>
-        </article>
-        <article className="three-parts">
-          <p>
-            <span>📱</span>
-            <span className="border">Productivité</span>
-          </p>
-          <h3>Réduire le temps sur les réseaux sociaux</h3>
-          <p>
-            Vous passez en moyenne 1h43/jour sur les réseaux sociaux,
-            principalement entre 20h-22h. Ce temps pourrait être réalloué à vos
-            objectifs.
-          </p>
-          <p className="border">
-            Impact estimé:
-            <br />
-            +7h/semaine disponibles
-          </p>
-        </article>
+        {recommendationsArray.map((recommendationsMap) => (
+          <AIRecommendations recommendationsArray={recommendationsMap} />
+        ))}
       </section>
       <section className="information">
         <h2>Points d'attention</h2>
         <article className="one-part">
-          <p>
-            <span className="border">⚠️ Sommeil en semaine</span>{" "}
-            <span className="border">⚠️ Temps d'écran</span>
+          <p className="points-to-consider">
+            {pointsToConsider.map((pointsToConsiderMap) => (
+              <span className="border">⚠️ {pointsToConsiderMap["point"]}</span>
+            ))}
           </p>
         </article>
       </section>

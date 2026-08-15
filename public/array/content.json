@@ -1,0 +1,68 @@
+{
+  "dashboard": [
+    {
+      "category": "Santé",
+      "value": 9241,
+      "information": "pas aujourd'hui",
+      "percent": [9241, 10000],
+      "gauge": true
+    },
+    {
+      "category": "Finances",
+      "value": "",
+      "information": "budjet urilisé",
+      "percent": [81, 100],
+      "gauge": true
+    },
+    {
+      "category": "Temps",
+      "value": 6.5,
+      "information": "focus aujourd'hui",
+      "percent": [17.5, 24],
+      "gauge": true
+    },
+    {
+      "category": "Habitudes",
+      "value": "",
+      "information": "cette semaine",
+      "percent": [72, 100],
+      "gauge": true
+    }
+  ],
+  "finance": [
+    {
+      "category": "Habitudes",
+      "value": "",
+      "information": "cette semaine",
+      "percent": [72, 100],
+      "gauge": true
+    }
+  ],
+  "habits": [
+    {
+      "category": "Habitudes",
+      "value": "",
+      "information": "cette semaine",
+      "percent": [72, 100],
+      "gauge": true
+    }
+  ],
+  "health": [
+    {
+      "category": "Habitudes",
+      "value": "",
+      "information": "cette semaine",
+      "percent": [72, 100],
+      "gauge": true
+    }
+  ],
+  "timeManagement": [
+    {
+      "category": "Habitudes",
+      "value": "",
+      "information": "cette semaine",
+      "percent": [72, 100],
+      "gauge": true
+    }
+  ]
+}

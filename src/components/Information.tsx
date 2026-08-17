@@ -15,6 +15,7 @@ function Information({ informationArray }: ArrayInfo) {
         {informationArray["information"]}
       </p>
       {informationArray["gauge"] &&
+        informationArray["value"] != "" &&
         `${percent(informationArray.percent[0], informationArray.percent[1])} %`}
       {informationArray["gauge"] &&
         gauge(informationArray.percent[0], informationArray.percent[1])}

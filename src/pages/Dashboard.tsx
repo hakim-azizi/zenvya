@@ -52,8 +52,9 @@ function Dashboard() {
         <h2>Recommandations IA</h2>
         {contentRecommendation.map((recommendationsMap) => (
           <AIRecommendations
-          key={recommendationsMap.title}
-          recommendationsArray={recommendationsMap} />
+            key={recommendationsMap.title}
+            recommendationsArray={recommendationsMap}
+          />
         ))}
       </section>
       <section className="information">
@@ -61,7 +62,9 @@ function Dashboard() {
         <article className="one-part">
           <p className="points-to-consider">
             {pointsToConsider.map((pointsToConsiderMap) => (
-              <span key={pointsToConsiderMap["point"]} className="border">⚠️ {pointsToConsiderMap["point"]}</span>
+              <span key={pointsToConsiderMap["point"]} className="border">
+                ⚠️ {pointsToConsiderMap["point"]}
+              </span>
             ))}
           </p>
         </article>

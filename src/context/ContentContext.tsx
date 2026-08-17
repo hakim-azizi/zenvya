@@ -15,10 +15,12 @@ export function ContentProvider({ children }: { children: React.ReactNode }) {
     Promise.all([
       fetch(`${baseUrl}/array/recommendations.json`).then((res) => res.json()),
       fetch(`${baseUrl}/array/information.json`).then((res) => res.json()),
-      fetch(`${baseUrl}/array/points-to-consider.json`).then((res) => res.json()),
+      fetch(`${baseUrl}/array/points-to-consider.json`).then((res) =>
+        res.json(),
+      ),
     ])
-      .then(([recommendations, information,pointsToConsider]) => {
-        setContent({ recommendations, information,pointsToConsider });
+      .then(([recommendations, information, pointsToConsider]) => {
+        setContent({ recommendations, information, pointsToConsider });
       })
       .catch((error) => console.error(error));
   }, []);

@@ -1,0 +1,30 @@
+{
+  "dashboard": [
+    {
+      "point": "Sommeil en semaine"
+    },
+        {
+      "point": "Temps d'écran"
+    }
+  ],
+  "finance": [
+    {
+      "point": "Habitudes"
+    }
+  ],
+  "habits": [
+    {
+      "point": "Habitudes"
+    }
+  ],
+  "health": [
+    {
+      "point": "Habitudes"
+    }
+  ],
+  "timeManagement": [
+    {
+      "point": "Habitudes"
+    }
+  ]
+}

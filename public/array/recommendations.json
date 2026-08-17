@@ -1,0 +1,61 @@
+{
+  "dashboard": [
+    {
+      "emojie": "😴",
+      "title": "Santé",
+      "subtitle": "Améliorer la qualité du sommeil",
+      "description": "Vos données montrent que votre sommeil est de meilleure qualité les jours où vous faites de l'exercice. Essayez d'augmenter votre activité physique en semaine.",
+      "result": "+15% qualité de sommeil estimée"
+    },
+    {
+      "emojie": "💰",
+      "title": "Finance",
+      "subtitle": "Optimiser vos dépenses de loisirs",
+      "description": "Vous êtes proche de votre budget loisirs. En réduisant de 15€/semaine, vous pourriez économiser 780€/an supplémentaires.",
+      "result": "+780€/an d'économies"
+    },
+    {
+      "emojie": "📱",
+      "title": "Productivité",
+      "subtitle": "Réduire le temps sur les réseaux sociaux",
+      "description": "Vous passez en moyenne 1h43/jour sur les réseaux sociaux, principalement entre 20h-22h. Ce temps pourrait être réalloué à vos objectifs.",
+      "result": "+7h/semaine disponibles"
+    }
+  ],
+  "finance": [
+    {
+      "emojie": "string",
+      "title": "string",
+      "subtitle": "string",
+      "description": "string",
+      "result": "string"
+    }
+  ],
+  "habits": [
+    {
+      "emojie": "string",
+      "title": "string",
+      "subtitle": "string",
+      "description": "string",
+      "result": "string"
+    }
+  ],
+  "health": [
+    {
+      "emojie": "string",
+      "title": "string",
+      "subtitle": "string",
+      "description": "string",
+      "result": "string"
+    }
+  ],
+  "timeManagement": [
+    {
+      "emojie": "string",
+      "title": "string",
+      "subtitle": "string",
+      "description": "string",
+      "result": "string"
+    }
+  ]
+}

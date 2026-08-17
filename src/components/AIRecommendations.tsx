@@ -1,8 +1,6 @@
-import type { RecommendationsType } from "../type/Type.tsx";
+import type { ArrayRecommendations } from "../utils/Type.tsx";
 
-type arrayInfo = { recommendationsArray: RecommendationsType };
-
-function AIRecommendations({ recommendationsArray }: arrayInfo) {
+function AIRecommendations({ recommendationsArray }: ArrayRecommendations) {
   return (
     <article className="three-parts">
       <p>

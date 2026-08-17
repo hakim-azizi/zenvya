@@ -53,5 +53,3 @@ export type ContentType = {
   information: InformationType;
   pointsToConsider: ConsiderType;
 };
-
-

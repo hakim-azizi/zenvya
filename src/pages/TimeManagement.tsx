@@ -1,9 +1,18 @@
+import { useContext } from "react";
+import { ContentContext } from "../context/ContentContext.tsx";
+import Information from "../components/Information";
 import Chart from "../components/Chart";
-import { gauge, percent, optionsChart } from "../utils/lib";
+import { gauge, percent, optionsChart } from "../utils/Lib";
 
 import "../style/TimeManagement.css";
 
 function TimeManagement() {
+  const content = useContext(ContentContext);
+
+  if (!content) {
+    return <img src="../images/loader.gif" />;
+  }
+  const contentInformation = content.information.timeManagement;
   return (
     <div className="content content-charts">
       <header className="center">
@@ -14,26 +23,12 @@ function TimeManagement() {
         </p>
       </header>
       <section className="information">
-        <article className="four-parts">
-          <p>Temps total suivi</p>
-          <p className="bold">168h</p>
-          <p>Cette semaine</p>
-        </article>
-        <article className="four-parts">
-          <p>Temps focus moyen</p>
-          <p className="bold">5.2h</p>
-          <p>{`${percent(2847, 3500)}% vs semaine dernière`}</p>
-        </article>
-        <article className="four-parts">
-          <p>Distractions/jour</p>
-          <p className="bold">2.1h</p>
-          <p>À réduire</p>
-        </article>
-        <article className="four-parts">
-          <p>Temps libre</p>
-          <p className="bold">30h</p>
-          <p>Cette semaine</p>
-        </article>
+        {contentInformation.map((informationMap) => (
+          <Information
+            key={informationMap.category}
+            informationArray={informationMap}
+          />
+        ))}
       </section>
       <section className="chart budget">
         <h2>Répartition hebdomadaire</h2>

@@ -1,7 +1,24 @@
 import { Link } from "react-router-dom";
+
 import "../style/Home.css";
 
 function Home() {
+  // useMemo(() => {
+  const rand = () => {
+    // eslint-disable-next-line react-hooks/purity
+    return Math.floor(Math.random() * (4 - 1 + 1)) + 1;
+  };
+  // }, []);
+  const contentLi = () => {
+    const li = [];
+    for (let i = 0; i < 35; i++) {
+      li.push(<li key={i} className={`color-${rand()}`} />);
+    }
+
+    return li;
+  };
+  console.log("li => ", contentLi());
+
   return (
     <>
       <div className="content content-dashboard">
@@ -50,41 +67,7 @@ function Home() {
             <article className="activity">
               <ul>
                 <li>Weekly Activity Heatmap</li>
-                <li className="color-1"></li>
-                <li className="color-2"></li>
-                <li className="color-1"></li>
-                <li className="color-1"></li>
-                <li className="color-3"></li>
-                <li className="color-2"></li>
-                <li className="color-4"></li>
-                <li className="color-1"></li>
-                <li className="color-4"></li>
-                <li className="color-4"></li>
-                <li className="color-2"></li>
-                <li className="color-1"></li>
-                <li className="color-4"></li>
-                <li className="color-1"></li>
-                <li className="color-1"></li>
-                <li className="color-4"></li>
-                <li className="color-2"></li>
-                <li className="color-1"></li>
-                <li className="color-1"></li>
-                <li className="color-2"></li>
-                <li className="color-4"></li>
-                <li className="color-4"></li>
-                <li className="color-2"></li>
-                <li className="color-1"></li>
-                <li className="color-4"></li>
-                <li className="color-2"></li>
-                <li className="color-2"></li>
-                <li className="color-1"></li>
-                <li className="color-4"></li>
-                <li className="color-1"></li>
-                <li className="color-4"></li>
-                <li className="color-2"></li>
-                <li className="color-2"></li>
-                <li className="color-1"></li>
-                <li className="color-3"></li>
+                {contentLi()}
               </ul>
             </article>
             <article className="activity recommendation">

@@ -1,0 +1,153 @@
+{
+  "dashboard": [
+    {
+      "category": "Santé",
+      "value": 9241,
+      "information": "pas aujourd'hui",
+      "percent": [9241, 10000],
+      "gauge": true
+    },
+    {
+      "category": "Finances",
+      "value": "",
+      "information": "budjet urilisé",
+      "percent": [81, 100],
+      "gauge": true
+    },
+    {
+      "category": "Temps",
+      "value": 6.5,
+      "information": "focus aujourd'hui",
+      "percent": [17.5, 24],
+      "gauge": true
+    },
+    {
+      "category": "Habitudes",
+      "value": "",
+      "information": "cette semaine",
+      "percent": [72, 100],
+      "gauge": true
+    }
+  ],
+  "finance": [
+    {
+      "category": "Budget mensuel",
+      "value": "3500 €",
+      "information": "Mars 2026",
+      "percent": [],
+      "gauge": false
+    },
+    {
+      "category": "Dépensé",
+      "value": "2847 €",
+      "information": "",
+      "percent": [2847, 3500],
+      "gauge": true
+    },
+    {
+      "category": "Restant",
+      "value": "653 €",
+      "information": "✓ Dans le budget",
+      "percent": [],
+      "gauge": false
+    },
+    {
+      "category": "Économies",
+      "value": "12450€",
+      "information": "Objectif: 20000 €",
+      "percent": [12450, 20000],
+      "gauge": true
+    }
+  ],
+
+  "habits": [
+    {
+      "category": "Complétées aujourd'hui",
+      "value": "4/5",
+      "information": "",
+      "percent": [4, 5],
+      "gauge": true
+    },
+    {
+      "category": "Taux hebdomadaire",
+      "value": "",
+      "information": "",
+      "percent": [5, 7],
+      "gauge": true
+    },
+    {
+      "category": "Meilleur streak",
+      "value": "15 jours",
+      "information": "Boire 2L d'eau",
+      "percent": [],
+      "gauge": false
+    },
+    {
+      "category": "Streak moyen",
+      "value": "8.6 jours",
+      "information": "Sur 5 habitudes",
+      "percent": [],
+      "gauge": false
+    }
+  ],
+  "health": [
+    {
+      "category": "Nombre de pas aujourd'hui",
+      "value": "6543",
+      "information": "Objectif: 10000",
+      "percent": [6543, 10000],
+      "gauge": true
+    },
+    {
+      "category": "Sommeil moyen",
+      "value": "6.6 heures",
+      "information": "Mars 2026",
+      "percent": [6.6, 8],
+      "gauge": true
+    },
+    {
+      "category": "Hydratation",
+      "value": "2.1L",
+      "information": "Objectif: 2.5L/jour",
+      "percent": [2.1, 2.5],
+      "gauge": true
+    },
+    {
+      "category": "Poids actuel",
+      "value": "74.2 kg",
+      "information": "-1.0 kg ce mois",
+      "percent": [73, 74.2],
+      "gauge": true
+    }
+  ],
+  "timeManagement": [
+    {
+      "category": "Temps total suivi",
+      "value": "168 kg",
+      "information": "Cette semaine",
+      "percent": [],
+      "gauge": false
+    },
+    {
+      "category": "Temps focus/jour",
+      "value": "5.2 h",
+      "information": "cette semaine",
+      "percent": [36.3, 51],
+      "gauge": true
+    },
+    {
+      "category": "Distractions/jour",
+      "value": "2.1 h",
+      "information": "Cette semaine",
+      "percent": [14.7, 51],
+      "gauge": true
+    },
+    {
+      "category": "Temps libre",
+      "value": "30 h",
+      "information": "Cette semaine",
+      "percent": [30, 168],
+      "gauge": true
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
+import { ContentProvider } from "./context/ContentContext.tsx";
 import Header from "./components/Header.tsx";
 import Footer from "./components/Footer.tsx";
 
@@ -12,7 +13,9 @@ function App() {
     <>
       <div id={`contener${homeId}`}>
         <Header />
-        <Outlet />
+        <ContentProvider>
+          <Outlet />
+        </ContentProvider>
       </div>
       <Footer />
     </>

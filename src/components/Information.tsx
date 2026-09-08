@@ -1,18 +1,24 @@
-import type { InformationType } from "../type/Type.tsx";
+import type { ArrayInfo } from "../utils/Type.tsx";
+import { percent, gauge } from "../utils/Lib.tsx";
 
-type arrayInfo = { informationArray: InformationType };
-
-function Information({ informationArray }: arrayInfo) {
+function Information({ informationArray }: ArrayInfo) {
   return (
     <article className="four-parts">
       <p>{informationArray["category"]}</p>
       <p>
-        <span className="bold">{informationArray["value"]}</span>
+        <span className="bold">
+          {informationArray["value"] === ""
+            ? `${percent(informationArray.percent[0], informationArray.percent[1])} %`
+            : informationArray["value"]}
+        </span>
         <br />
         {informationArray["information"]}
       </p>
-      {informationArray["percent"]}
-      {informationArray["gauge"]}
+      {informationArray["gauge"] &&
+        informationArray["value"] != "" &&
+        `${percent(informationArray.percent[0], informationArray.percent[1])} %`}
+      {informationArray["gauge"] &&
+        gauge(informationArray.percent[0], informationArray.percent[1])}
     </article>
   );
 }

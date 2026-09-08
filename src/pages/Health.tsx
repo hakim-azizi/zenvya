@@ -1,8 +1,16 @@
+import { useContext } from "react";
+import { ContentContext } from "../context/ContentContext.tsx";
+import Information from "../components/Information";
 import Chart from "../components/Chart";
-import { optionsChart } from "../utils/lib";
-import { gauge } from "../utils/lib";
+import { optionsChart } from "../utils/Lib";
 
 function Health() {
+  const content = useContext(ContentContext);
+
+  if (!content) {
+    return <img src="../images/loader.gif" />;
+  }
+  const contentInformation = content.information.health;
   return (
     <div className="content content-charts">
       <header className="center">
@@ -10,30 +18,12 @@ function Health() {
         <p>Suivez votre activité physique, sommeil et hydratation</p>
       </header>
       <section className="information">
-        <article className="four-parts">
-          <p>Pas aujourd'hui</p>
-          <p className="bold">6543</p>
-          {gauge(10000, 6543)}
-          <p>Objectif: 10000</p>
-        </article>
-        <article className="four-parts">
-          <p>Sommeil moyen</p>
-          <p className="bold">7.5</p>
-          {gauge(10000, 6543)}
-          <p>Mars 2026</p>
-        </article>
-        <article className="four-parts">
-          <p>Hydratation</p>
-          <p className="bold">2.1L</p>
-          {gauge(2.5, 2.1)}
-          <p>Objectif: 2.5L/jour</p>
-        </article>
-        <article className="four-parts">
-          <p>Poids actuel</p>
-          <p className="bold">74.2 kg</p>
-          <p>-1.0 kg ce mois</p>
-          <p>Objectif: 73kg</p>
-        </article>
+        {contentInformation.map((informationMap) => (
+          <Information
+            key={informationMap.category}
+            informationArray={informationMap}
+          />
+        ))}
       </section>
       <section className="chart income-expenses">
         <h2>Activité physique - 7 derniers jours</h2>

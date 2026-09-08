@@ -83,7 +83,7 @@ function Menu() {
           <Link to="./">
             ZENVYA
             <br />
-            Assistant intelligent
+            Track less. Live more.
           </Link>
         </p>
       </div>

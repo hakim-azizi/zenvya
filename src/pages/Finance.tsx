@@ -1,10 +1,20 @@
+import { useContext } from "react";
+
+import { ContentContext } from "../context/ContentContext.tsx";
+import Information from "../components/Information";
 import Chart from "../components/Chart";
-import { percent, gauge } from "../utils/lib";
-import { optionsChart } from "../utils/lib";
+import { percent, gauge } from "../utils/Lib";
+import { optionsChart } from "../utils/Lib";
 
 import "../style/Finance.css";
 
 function Finance() {
+  const content = useContext(ContentContext);
+
+  if (!content) {
+    return <img src="../images/loader.gif" />;
+  }
+  const contentInformation = content.information.finance;
   return (
     <div className="content content-charts">
       <header className="center">
@@ -12,28 +22,12 @@ function Finance() {
         <p>Gérez votre budget, suivez vos dépenses et économies</p>
       </header>
       <section className="information">
-        <article className="four-parts">
-          <p>Budget mensuel</p>
-          <p>3500€</p>
-          <p>Mars 2026</p>
-        </article>
-        <article className="four-parts">
-          <p>Dépensé</p>
-          <p>2847€</p>
-          {gauge(2847, 3500)}
-          <p>{`${percent(2847, 3500)}%`} du budget</p>
-        </article>
-        <article className="four-parts">
-          <p>Restant</p>
-          <p>653€</p>
-          <p>✓ Dans le budget</p>
-        </article>
-        <article className="four-parts">
-          <p>Économies</p>
-          <p>12450€</p>
-          {gauge(12450, 20000)}
-          <p>Objectif: 20000€</p>
-        </article>
+        {contentInformation.map((informationMap) => (
+          <Information
+            key={informationMap.category}
+            informationArray={informationMap}
+          />
+        ))}
       </section>
       <section className="chart budget">
         <h2>Dépenses par catégorie</h2>
@@ -112,7 +106,6 @@ function Finance() {
           <Chart options={optionsChart("ChangesInIncomeAndExpenses")} />
         </article>
       </section>
-
       <section className="chart points-consider">
         <h2>Points d'attention</h2>
         <ul>

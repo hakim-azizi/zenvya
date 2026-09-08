@@ -30,7 +30,7 @@ function Dashboard() {
         <article>
           Score de Bien-être IA
           <p className="score">
-            <span>{percent(7, 8)}</span>/100
+            <span>{percent(7, 8)}</span> %
             <br />
             Excellent progrès cette semaine! Continuez comme ça.
           </p>

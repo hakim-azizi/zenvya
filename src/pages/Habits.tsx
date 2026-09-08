@@ -1,8 +1,17 @@
-import { gauge, percent } from "../utils/lib";
+import { useContext } from "react";
+import { ContentContext } from "../context/ContentContext.tsx";
+import Information from "../components/Information";
+import { gauge, percent } from "../utils/Lib";
 
 import "../style/Habits.css";
 
 function Habits() {
+  const content = useContext(ContentContext);
+
+  if (!content) {
+    return <img src="../images/loader.gif" />;
+  }
+  const contentInformation = content.information.habits;
   return (
     <div className="content content-charts">
       <header className="center">
@@ -10,26 +19,12 @@ function Habits() {
         <p>Construisez de bonnes habitudes et suivez vos progrès quotidiens</p>
       </header>
       <section className="information">
-        <article className="four-parts">
-          <h2>Complétées aujourd'hui</h2>
-          <p className="bold">4/5</p>
-          {gauge(4, 5)}
-        </article>
-        <article className="four-parts">
-          <h2>Taux hebdomadaire</h2>
-          <p className="bold">{percent(5, 7)}%</p>
-          <p>+5% vs semaine dernière</p>
-        </article>
-        <article className="four-parts">
-          <h2>Meilleur streak</h2>
-          <p className="bold">15 jours</p>
-          <p>Boire 2L d'eau</p>
-        </article>
-        <article className="four-parts">
-          <h2>Streak moyen</h2>
-          <p className="bold">8.6 jours</p>
-          <p>Sur 5 habitudes</p>
-        </article>
+        {contentInformation.map((informationMap) => (
+          <Information
+            key={informationMap.category}
+            informationArray={informationMap}
+          />
+        ))}
       </section>
       <section className="chart budget income-expenses habits">
         <h2>Mes habitudes</h2>

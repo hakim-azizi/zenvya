@@ -23,10 +23,20 @@ export function ContentProvider({ children }: { children: React.ReactNode }) {
         setContent({ recommendations, information, pointsToConsider });
       })
       .catch((error) => console.error(error));
-  }, []);
+  }, [content]);
 
   if (!content) {
-    return <img src="../images/loader.gif" alt="Chargement..." />;
+    return (
+      <picture
+        style={{
+          position: "fixed",
+          top: "calc(50vh - 100px)",
+          left: "calc(50vw - 100px)",
+        }}
+      >
+        <img src="../images/loader.gif" alt="Chargement..." />
+      </picture>
+    );
   }
 
   return (

@@ -17,7 +17,6 @@ function Home() {
 
     return li;
   };
-  console.log("li => ", contentLi());
 
   return (
     <>

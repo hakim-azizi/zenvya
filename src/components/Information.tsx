@@ -1,5 +1,5 @@
 import type { ArrayInfo } from "../utils/Type.tsx";
-import { percent, gauge } from "../utils/Lib.tsx";
+import { percent, gauge } from "../utils/Libs.tsx";
 
 function Information({ informationArray }: ArrayInfo) {
   return (

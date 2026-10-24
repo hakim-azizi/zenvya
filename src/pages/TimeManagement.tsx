@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ContentContext } from "../context/ContentContext.tsx";
 import Information from "../components/Information";
 import Chart from "../components/Chart";
-import { gauge, percent, optionsChart } from "../utils/Lib";
+import { gauge, percent, optionsChart } from "../utils/Libs.tsx";
 
 import "../style/TimeManagement.css";
 

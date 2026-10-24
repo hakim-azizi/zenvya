@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ContentContext } from "../context/ContentContext.tsx";
 import Information from "../components/Information";
 import AIRecommendations from "../components/AIRecommendations.tsx";
-import { percent } from "../utils/Lib.tsx";
+import { percent } from "../utils/Libs.tsx";
 
 import "../style/Dashboard.css";
 

@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ContentContext } from "../context/ContentContext.tsx";
 import Information from "../components/Information";
-import { gauge, percent } from "../utils/Lib";
+import { gauge, percent } from "../utils/Libs.tsx";
 
 import "../style/Habits.css";
 

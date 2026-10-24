@@ -15,8 +15,7 @@ function AIConsultingResponse({ responseAI }: { responseAI: string }) {
     {},
   );
   useEffect(() => {
-    // fetch(`${import.meta.env.VITE_API_URL}/array/consulting.json`)
-    fetch(`https://zenvya.vercel.app/array/consulting.json`)
+    fetch(`${import.meta.env.VITE_API_URL}array/consulting.json`)
       .then((response) => response.json())
       .then((data) => setContent(data));
   }, []);

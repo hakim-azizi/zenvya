@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ContentContext } from "../context/ContentContext.tsx";
 import Information from "../components/Information";
 import Chart from "../components/Chart";
-import { optionsChart } from "../utils/Lib";
+import { optionsChart } from "../utils/Libs.tsx";
 
 function Health() {
   const content = useContext(ContentContext);

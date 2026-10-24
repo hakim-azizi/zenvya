@@ -13,9 +13,9 @@ export function ContentProvider({ children }: { children: React.ReactNode }) {
     const baseUrl = import.meta.env.VITE_API_URL;
 
     Promise.all([
-      fetch(`${baseUrl}/array/recommendations.json`).then((res) => res.json()),
-      fetch(`${baseUrl}/array/information.json`).then((res) => res.json()),
-      fetch(`${baseUrl}/array/points-to-consider.json`).then((res) =>
+      fetch(`${baseUrl}array/recommendations.json`).then((res) => res.json()),
+      fetch(`${baseUrl}array/information.json`).then((res) => res.json()),
+      fetch(`${baseUrl}array/points-to-consider.json`).then((res) =>
         res.json(),
       ),
     ])

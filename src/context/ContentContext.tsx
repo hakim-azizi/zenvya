@@ -23,7 +23,7 @@ export function ContentProvider({ children }: { children: React.ReactNode }) {
         setContent({ recommendations, information, pointsToConsider });
       })
       .catch((error) => console.error(error));
-  }, [content]);
+  }, []);
 
   if (!content) {
     return (
